@@ -6,7 +6,6 @@
 import React from 'react';
 
 class ShowIngredients extends React.Component {
-<<<<<<< HEAD
     constructor(props) {
         super(props)
     }
@@ -23,7 +22,6 @@ class ShowIngredients extends React.Component {
         )
     }
 }
-=======
   constructor(props) {
     super(props);
   }
