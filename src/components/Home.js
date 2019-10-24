@@ -1,8 +1,17 @@
 import React from 'react';
 import Navbar from './Navbar';
+import CocktailFilters from './CocktailFilters';
+import PizzaFilters from './PizzaFilters';
 import './Home.css';
 
-function Home() {
+class Home extends React.Component {
+  /*constructor(props){
+    super(props)
+    this.state={}
+    this.handleChange=this.handleChange.bind(this)
+    this.handleSubmit=this.handleSubmit.bind(this)
+  }*/
+  render (){
     return (
       <div className="Home">
         <Navbar/>
@@ -15,7 +24,9 @@ function Home() {
             <figure>
               <img className='imageCocktail' src='https://zupimages.net/up/19/43/4p0w.jpg' alt='image cocktail'></img>
             </figure>
-            <button type="button" /*onClick={}*/>Get a cocktail</button>
+            
+            <button type="button" onClick={CocktailFilters}>Get a cocktail</button>
+            {/* <a href="#CocktailFilters">Get a cocktail</a> */}
           </div>
           <div className="pizzaButton">
           <button type="button" /*onClick={}*/>Get a pizza</button>
@@ -28,5 +39,6 @@ function Home() {
       </div>
     )
   }
+}
 
   export default Home
