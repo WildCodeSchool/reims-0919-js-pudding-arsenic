@@ -18,4 +18,6 @@ class ShowIngredients extends React.Component {
     }
 }
 
+
+
 export default ShowIngredients;
