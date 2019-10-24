@@ -1,8 +1,7 @@
-#CocktailFilters{
+#PizzaFilters{
     padding:0%;
     height:736px;
-    background-color:grey;
+    background-color:rgba(206, 199, 199, 0.877);
     display:flex;
     justify-content:space-around;
 }
-

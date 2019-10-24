@@ -79,7 +79,7 @@ class App extends React.Component {
   render() {
     const ingredientNumber = this.randomIngredientNumber()
     let ingredientArray = []
-    const showIngredientCall = <ShowIngredients {...product[7]} />
+    const showIngredientCall = <ShowIngredients {...product[3]} />
     for (let i = 0; i < ingredientNumber; i++) {
       ingredientArray.push(showIngredientCall)
     }
