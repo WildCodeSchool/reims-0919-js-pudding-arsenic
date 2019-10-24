@@ -1,16 +1,7 @@
-import React from "react"
-import "./App.css"
-import ShowIngredients from "./components/ShowIngredients/ShowIngredients"
+import React from 'react';
+import './App.css';
+import ShowIngredients from './components/ShowIngredients/ShowIngredients';
 
-<<<<<<< HEAD
-const product = {
-  image_front_url:
-    "https://static.openfoodfacts.org/images/products/400/263/102/4222/front_fr.8.400.jpg",
-  generic_name_fr: "Bière Blonde",
-  nutriments: { alcohol: 5 },
-  manufacturing_places: "Allemagne"
-}
-=======
 const product = [
     {"image_front_url": "https://static.openfoodfacts.org/images/products/400/263/102/4222/front_fr.8.400.jpg",
     "generic_name_fr": "Bière Blonde",
@@ -44,13 +35,13 @@ const product = [
     {
       "image_front_url": "https://static.openfoodfacts.org/images/products/325/221/039/0014/front_fr.121.400.jpg",
       "generic_name_fr": "Lait demi-écrémé",//"product_name"
-      "nutriments": {"alcohol": ""},
+      "nutriments": {},
       "manufacturing_places": "france"   
     },
     {
       "image_front_url": "https://static.openfoodfacts.org/images/products/315/525/034/9793/front_fr.80.400.jpg",
       "generic_name_fr": "Crème chantilly ferme et onctueuse",//"product_name"
-      "nutriments": {"alcohol":""},
+      "nutriments": {},
       "manufacturing_places": "France"   
     },
     {
@@ -68,11 +59,10 @@ const product = [
     {
       "image_front_url": "https://static.openfoodfacts.org/images/products/356/007/096/2334/front_fr.23.400.jpg",
       "generic_name_fr": "Miel des terres blanches de Champagne",//"product_name"
-      "nutriments": {"alcohol": },
+      "nutriments": {},
       "manufacturing_places": "France"   
     }
   ] 
->>>>>>> 439377126f918cf8ae648206f7c6a22001cc1b21
 
 class App extends React.Component {
   constructor(props) {
@@ -80,7 +70,7 @@ class App extends React.Component {
   }
   randomIngredientNumber() {
     let numbers = [3, 4, 5, 6, 7]
-    let idNumbers = Math.floor(Math.random() * 5)
+    let idNumbers = (Math.floor(Math.random() * 5))
     return numbers[idNumbers]
   }
   render() {
@@ -93,18 +83,16 @@ class App extends React.Component {
     console.log(ingredientArray)
     return (
       <div>
-        <header></header>
+         <header></header>
         {ingredientArray.map(showIngredientCall => {
           return <div>{showIngredientCall}</div>
         })}
+
+
       </div>
     )
-  }
+  }  
 }
 
-<<<<<<< HEAD
-export default App
-=======
 
 export default App;
->>>>>>> 439377126f918cf8ae648206f7c6a22001cc1b21
