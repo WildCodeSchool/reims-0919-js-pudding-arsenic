@@ -8,7 +8,7 @@ class ShowIngredients extends React.Component {
         return (
             <div>
                 <figure>
-                    <img src={this.props.image_front_url} />
+                <img src={this.props.image_front_url} />
                 </figure>
                 <p>{this.props.generic_name_fr}</p>
                 <p>{this.props.manufacturing_places}</p>

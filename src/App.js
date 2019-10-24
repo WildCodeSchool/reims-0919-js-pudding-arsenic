@@ -29,19 +29,19 @@ const product = [
     {
       "image_front_url": "https://static.openfoodfacts.org/images/products/350/211/000/9449/front_fr.56.400.jpg",
       "generic_name_fr": "Pur jus d'orange sans pulpe",//"product_name"
-      "nutriments": {},
+      "nutriments": {"alcohol": 1},
       "manufacturing_places": "Australie"   
     },
     {
       "image_front_url": "https://static.openfoodfacts.org/images/products/325/221/039/0014/front_fr.121.400.jpg",
       "generic_name_fr": "Lait demi-écrémé",//"product_name"
-      "nutriments": {},
+      "nutriments": {"alcohol": 1},
       "manufacturing_places": "france"   
     },
     {
       "image_front_url": "https://static.openfoodfacts.org/images/products/315/525/034/9793/front_fr.80.400.jpg",
       "generic_name_fr": "Crème chantilly ferme et onctueuse",//"product_name"
-      "nutriments": {},
+      "nutriments": {"alcohol": 1},
       "manufacturing_places": "France"   
     },
     {
@@ -59,7 +59,7 @@ const product = [
     {
       "image_front_url": "https://static.openfoodfacts.org/images/products/356/007/096/2334/front_fr.23.400.jpg",
       "generic_name_fr": "Miel des terres blanches de Champagne",//"product_name"
-      "nutriments": {},
+      "nutriments": {"alcohol": 1},
       "manufacturing_places": "France"   
     }
   ] 
@@ -76,7 +76,7 @@ class App extends React.Component {
   render() {
     const ingredientNumber = this.randomIngredientNumber()
     let ingredientArray = []
-    const showIngredientCall = <ShowIngredients {...product} />
+    const showIngredientCall = <ShowIngredients {...product[7]} />
     for (let i = 0; i < ingredientNumber; i++) {
       ingredientArray.push(showIngredientCall)
     }
