@@ -25,8 +25,6 @@ class ShowIngredients extends React.Component {
   constructor(props) {
     super(props);
   }
->>>>>>> c19f663d5a2d4ec02c6e2ac0dc2d18b2571f62f8
-
   render() {
     return (
       <div>
