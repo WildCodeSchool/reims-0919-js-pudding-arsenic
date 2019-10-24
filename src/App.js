@@ -1,6 +1,9 @@
 import React from 'react';
 import './App.css';
 import ShowIngredients from './components/ShowIngredients/ShowIngredients';
+import Home from './components/Home';
+import CocktailFilters from './components/CocktailFilters';
+import PizzaFilters from './components/PizzaFilters';
 
 const product = [
     {"image_front_url": "https://static.openfoodfacts.org/images/products/400/263/102/4222/front_fr.8.400.jpg",
@@ -83,12 +86,16 @@ class App extends React.Component {
     console.log(ingredientArray)
     return (
       <div>
+        <Home /> 
+        <CocktailFilters />
+        <PizzaFilters />
          <header></header>
         {ingredientArray.map(showIngredientCall => {
           return <div>{showIngredientCall}</div>
         })}
 
 
+ 
       </div>
     )
   }  
