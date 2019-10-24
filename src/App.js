@@ -49,7 +49,7 @@ const product = [
     },
     {
       "image_front_url": "https://static.openfoodfacts.org/images/products/541/022/824/5674/front_fr.4.400.jpg",
-      "generic_name_fr": "Bierre",//"product_name"
+      "generic_name_fr": "Bière",//"product_name"
       "nutriments": {"alcohol": 9},
       "manufacturing_places": "Belgique"   
     },
@@ -79,7 +79,7 @@ class App extends React.Component {
   render() {
     const ingredientNumber = this.randomIngredientNumber()
     let ingredientArray = []
-    const showIngredientCall = <ShowIngredients {...product[7]} />
+    const showIngredientCall = <ShowIngredients {...product[2]} />
     for (let i = 0; i < ingredientNumber; i++) {
       ingredientArray.push(showIngredientCall)
     }

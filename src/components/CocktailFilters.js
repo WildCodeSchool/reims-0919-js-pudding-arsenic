@@ -1,5 +1,5 @@
 import React from 'react';
-import 'CocktailFilters.css'
+import './CocktailFilters.css';
 
 function CocktailFilters () {
     return(
