@@ -6,24 +6,8 @@
 import React from 'react';
 
 class ShowIngredients extends React.Component {
-    constructor(props) {
-        super(props)
-    }
-    render() {
-        return (
-            <div>
-                <figure>
-                <img src={this.props.image_front_url} />
-                </figure>
-                <p>{this.props.generic_name_fr}</p>
-                <p>{this.props.manufacturing_places}</p>
-                <p>{this.props.nutriments.alcohol}° alcool</p>
-            </div>
-        )
-    }
-}
   constructor(props) {
-    super(props);
+      super(props)
   }
   render() {
     return (
@@ -41,6 +25,7 @@ class ShowIngredients extends React.Component {
     );
   }
 }
+
 
 
 export default ShowIngredients;
