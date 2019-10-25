@@ -73,9 +73,13 @@ class AlcoholFilter extends React.Component {
 					</button>
 					<button className="Salé" onClick={this.saltyOrSweet}>
 						Salé
-					</button>	
+					</button>
 				</div>
-				<p>Vous avez choisi:<br/>{this.state.taste}</p>
+				<p>
+					Vous avez choisi:
+					<br />
+					{this.state.taste}
+				</p>
 			</div>
 		)
 	}
