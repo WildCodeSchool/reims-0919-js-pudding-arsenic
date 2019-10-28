@@ -1,7 +1,7 @@
 import React from "react"
 import "./ShowIngredients.css"
 
-function ShowIngredients () {
+function ShowIngredients() {
 	return (
 		<div className="ingredientCard">
 			<img
