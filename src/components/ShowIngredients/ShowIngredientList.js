@@ -1,6 +1,5 @@
 import React from 'react'
 import ShowIngredients from './ShowIngredients'
-import { tsConstructorType } from '@babel/types'
 
 const product = [
 	{
@@ -76,9 +75,6 @@ const product = [
 ]
 
 class ShowIngredientList extends React.Component {
-    constructor() {
-        super()
-    }
     randomIngredientNumber() {
         let numbers = [3, 4, 5, 6, 7]
         let idNumbers = Math.floor(Math.random() * 5)
