@@ -1,10 +1,5 @@
-import React from "react"
-import "./App.css"
-import ShowIngredients from "./components/ShowIngredients/ShowIngredients"
-import Home from "./components/Home"
-import CocktailFilters from "./components/CocktailFilters"
-import PizzaFilters from "./components/PizzaFilters"
-import ShowIngredientList from "./components/ShowIngredients/ShowIngredientList"
+import React from 'react'
+import ShowIngredients from './ShowIngredients'
 
 const product = [
 	{
@@ -79,29 +74,11 @@ const product = [
 	},
 ]
 
-class App extends React.Component {
-	randomIngredientNumber() {
-		let numbers = [3, 4, 5, 6, 7]
-		let idNumbers = Math.floor(Math.random() * 5)
-		return numbers[idNumbers]
-	}
-	render() {
-		const ingredientNumber = this.randomIngredientNumber()
-		let ingredientArray = []
-		const showIngredientCall = <ShowIngredients {...product[2]} />
-		for (let i = 0; i < ingredientNumber; i++) {
-			ingredientArray.push(showIngredientCall)
-		}
-		return (
-			<div>
-				<header></header>
-				<Home />
-				<CocktailFilters />
-				<PizzaFilters />
-				<ShowIngredientList />				
-			</div>
-		)
-	}
+
+function ShowIngredientList({image_front_url, generic_name_fr, nutriments, manufacturing_places}) {
+    return (
+        product.map(product => <ShowIngredients {...product} />)            
+    )
 }
 
-export default App
+export default ShowIngredientList
