@@ -86,10 +86,11 @@ class ShowIngredientList extends React.Component {
 	constructor (props) {
 		super(props)
 		this.state = {
-				image_front_url: "",
+			products : [
+				{image_front_url: "",
 				generic_name_fr: "",
-				nutriments: "",
-				manufacturing_places: ""		
+				manufacturing_places: ""},
+			]
 		}
 	}
 	componentDidMount () {
@@ -106,10 +107,17 @@ class ShowIngredientList extends React.Component {
 			.then (response => response.data)
 			.then (data => {
 				this.setState ({
-					image_front_url: data.products[randomNumber].image_front_url,
-					generic_name_fr: data.products[randomNumber].generic_name_fr,
-					nutriments: data.products[randomNumber].nutriments,
-					manufacturing_places: data.products[randomNumber].manufacturing_places
+					products: [
+						{image_front_url: data.products[randomNumber].image_front_url,
+						generic_name_fr: data.products[randomNumber].generic_name_fr,
+						manufacturing_places: data.products[randomNumber].manufacturing_places
+						}						
+					]
+
+					//image_front_url: data.products[randomNumber].image_front_url,
+					//generic_name_fr: data.products[randomNumber].generic_name_fr,
+					//nutriments: data.products[randomNumber].nutriments,
+					//manufacturing_places: data.products[randomNumber].manufacturing_places
 				})
 			})
 	}
