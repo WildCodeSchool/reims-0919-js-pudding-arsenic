@@ -1,5 +1,6 @@
 import React from "react"
 import "./AlcoholFilter.css"
+import SliderAlcohol from './Sliders/SliderAlcohol'
 
 class AlcoholFilter extends React.Component {
 	constructor() {
@@ -45,6 +46,7 @@ class AlcoholFilter extends React.Component {
 			<div className="AlcoholFilter">
 				<img src="https://zupimages.net/up/19/43/4p0w.jpg" alt="cocktail"></img>
 				<p>Entrez une fourchette entre 0 et 100 dans les champs ci-dessous</p>
+				<SliderAlcohol />
 				<div className="alcoholFilterEntry">
 					<input
 						className="numberField"
