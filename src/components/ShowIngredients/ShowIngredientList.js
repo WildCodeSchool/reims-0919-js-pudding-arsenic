@@ -87,10 +87,10 @@ class ShowIngredientList extends React.Component {
 	constructor (props) {
 		super(props)
 		this.state = {
-			image_front_url: "",
-			generic_name_fr: "",
-			nutriments: "",
-			manufacturing_places: ""
+				image_front_url: "",
+				generic_name_fr: "",
+				nutriments: "",
+				manufacturing_places: ""		
 		}
 	}
 	componentDidMount () {
