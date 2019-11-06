@@ -82,6 +82,7 @@ class ShowIngredientList extends React.Component {
 	constructor (props) {
 		super(props)
 		this.state = {
+			numberOfIngredients : this.randomIngredientNumber(),
 			products : [
 				{image_front_url: "",
 				generic_name_fr: "",
@@ -97,7 +98,6 @@ class ShowIngredientList extends React.Component {
 	randomIngredientNumber() {
     let numbers = [3, 4, 5, 6, 7]
     let idNumbers = Math.floor(Math.random() * 5)
-	console.log (numbers[idNumbers])
     return numbers[idNumbers]
 	}
 
@@ -122,6 +122,22 @@ class ShowIngredientList extends React.Component {
 						{image_front_url: data.products[randomNumber].image_front_url,
 						generic_name_fr: data.products[randomNumber].generic_name_fr,
 						manufacturing_places: data.products[randomNumber].manufacturing_places
+						},
+						{image_front_url: data.products[randomNumber].image_front_url,
+						generic_name_fr: data.products[randomNumber].generic_name_fr,
+						manufacturing_places: data.products[randomNumber].manufacturing_places
+						},
+						{image_front_url: data.products[randomNumber].image_front_url,
+						generic_name_fr: data.products[randomNumber].generic_name_fr,
+						manufacturing_places: data.products[randomNumber].manufacturing_places
+						},
+						{image_front_url: data.products[randomNumber].image_front_url,
+						generic_name_fr: data.products[randomNumber].generic_name_fr,
+						manufacturing_places: data.products[randomNumber].manufacturing_places
+						},
+						{image_front_url: data.products[randomNumber].image_front_url,
+						generic_name_fr: data.products[randomNumber].generic_name_fr,
+						manufacturing_places: data.products[randomNumber].manufacturing_places
 						}								
 					]
 				})
@@ -132,6 +148,7 @@ class ShowIngredientList extends React.Component {
 		return (
 			<div>
 				{this.state.products
+					.filter((product, index) => index < this.state.numberOfIngredients)
 					.map ((product, i) => <ShowIngredients 
 						image_front_url={this.state.products[i].image_front_url}
 						generic_name_fr={this.state.products[i].generic_name_fr}
