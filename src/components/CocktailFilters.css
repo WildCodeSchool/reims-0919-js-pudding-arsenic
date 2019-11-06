@@ -1,0 +1,7 @@
+#CocktailFilters {
+	padding: 0%;
+	height: 736px;
+	background-color: grey;
+	display: flex;
+	flex-direction: column;
+}
