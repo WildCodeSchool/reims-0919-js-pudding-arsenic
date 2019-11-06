@@ -1,0 +1,16 @@
+.PresOfFood{
+    width: 100%;
+    background-image:url(https://zupimages.net/up/19/44/1czf.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.PresOfFood h2 {
+    text-align: center;
+    margin-top:1%;
+    margin-bottom:1%;
+    color:white;
+    font-family: 'Bigshot One', cursive;
+    font-size:3em;
+    }

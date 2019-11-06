@@ -1,11 +1,25 @@
 .NavbarButton{
     background-color:black;
     display:flex;
-    height:80px;
-    padding:2%;
+    height:50px;
+    padding-right:10%;
+    padding-left:10%;
+    justify-content: space-between;
+    width:60%;
 }
 
 .pizzaNavbarButton, .NavbarHomeButton, .cocktailNavbarButton {
     background-color:black;
     border:none;
+
+}
+
+.imageNavbarPizza,.imageNavbarCocktail,.imageNavbarHome{
+    height:45px;
+}
+
+@media only screen and (min-width: 415px){
+    .NavbarButton{
+        display:none
+    }
 }
