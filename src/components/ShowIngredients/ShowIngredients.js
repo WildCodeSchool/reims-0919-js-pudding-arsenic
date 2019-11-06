@@ -1,9 +1,15 @@
 import React from "react"
 import "./ShowIngredients.css"
 
+function refreshPage(){ 
+	window.location.reload(); 
+  }
+
 class ShowIngredients extends React.Component {
 	render() {
 		return (
+			<div>
+			<button type="button" onClick={ refreshPage }> <span>Reset all</span> </button>
 			<div className="ingredientCard">
 				<img
 					className="productImage"
@@ -16,8 +22,9 @@ class ShowIngredients extends React.Component {
 					<p className="nutriments">{this.props.nutriments.alcohol}° alcool</p>
 				</div>
 			</div>
+
+			</div>
 		)
 	}
 }
-
 export default ShowIngredients
