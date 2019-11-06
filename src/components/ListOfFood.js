@@ -1,9 +1,8 @@
 import React from 'react';
-import ShowIngredients from './components/ShowIngredients/ShowIngredients';
-import Home from './components/Home';
-import CocktailFilters from './components/CocktailFilters';
-import PizzaFilters from './components/PizzaFilters';
-import ListOfFood from './components/ListOfFood';
+import ShowIngredients from './ShowIngredients/ShowIngredients';
+import Home from './Home';
+import CocktailFilters from './CocktailFilters';
+import PizzaFilters from './PizzaFilters';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import {useHistory} from 'react-router-dom';
 
@@ -69,27 +68,36 @@ const product = [
     }
   ] 
 
-class App extends React.Component {
+class ListOfFood extends React.Component {
   constructor(props) {
     super(props)
   }
-
+  randomIngredientNumber() {
+    let numbers = [3, 4, 5, 6, 7]
+    let idNumbers = (Math.floor(Math.random() * 5))
+    return numbers[idNumbers]
+  }
   render() {
+    const ingredientNumber = this.randomIngredientNumber()
+    let ingredientArray = []
+    const showIngredientCall = <ShowIngredients {...product[3]} />
+    for (let i = 0; i < ingredientNumber; i++) {
+      ingredientArray.push(showIngredientCall)
+    }
+    console.log(ingredientArray)
     return (
       <div>
-        <Router>
-          <Route path="/" exact component={Home} />
-          <Route path="/CocktailFilters" exact component={CocktailFilters} />
-          <Route path="/pizzaFilters" exact component={PizzaFilters} />
-          <Route path="/ShowIngredients" exact component={ListOfFood} />
-          {/* <Route path="/Showingredients" component={ShowIngredients}/> */}
          <header></header>
-        </Router>
+        {ingredientArray.map(showIngredientCall => {
+          return <div>{showIngredientCall}</div>
+        })}
+
+
+
       </div>
     )
   }  
 }
 
 
-export default App;
-
+export default ListOfFood;

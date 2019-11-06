@@ -1,15 +1,11 @@
-.Navbar {
-	display: flex;
-	flex-direction: row-reverse;
-	background-image: linear-gradient(
-		to right,
-		rgba(0, 0, 0, 1),
-		rgba(0, 0, 0, 0),
-		rgba(0, 0, 0, 0)
-	);
+.NavbarButton{
+    background-color:black;
+    display:flex;
+    height:80px;
+    padding:2%;
 }
 
-img,
-#revolver {
-	width: 15%;
+.pizzaNavbarButton, .NavbarHomeButton, .cocktailNavbarButton {
+    background-color:black;
+    border:none;
 }

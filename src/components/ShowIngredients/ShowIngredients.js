@@ -1,6 +1,7 @@
 import React from "react"
 import "./ShowIngredients.css"
 
+
 class ShowIngredients extends React.Component {
 	render() {
 		return (
