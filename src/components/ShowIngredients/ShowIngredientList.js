@@ -111,13 +111,16 @@ class ShowIngredientList extends React.Component {
 						{image_front_url: data.products[randomNumber].image_front_url,
 						generic_name_fr: data.products[randomNumber].generic_name_fr,
 						manufacturing_places: data.products[randomNumber].manufacturing_places
-						}						
+						},
+						{image_front_url: data.products[randomNumber].image_front_url,
+						generic_name_fr: data.products[randomNumber].generic_name_fr,
+						manufacturing_places: data.products[randomNumber].manufacturing_places
+						},
+						{image_front_url: data.products[randomNumber].image_front_url,
+						generic_name_fr: data.products[randomNumber].generic_name_fr,
+						manufacturing_places: data.products[randomNumber].manufacturing_places
+						}									
 					]
-
-					//image_front_url: data.products[randomNumber].image_front_url,
-					//generic_name_fr: data.products[randomNumber].generic_name_fr,
-					//nutriments: data.products[randomNumber].nutriments,
-					//manufacturing_places: data.products[randomNumber].manufacturing_places
 				})
 			})
 	}
@@ -125,7 +128,13 @@ class ShowIngredientList extends React.Component {
 	render() {
 		return (
 			<div>
-				<ShowIngredients {...this.state} />
+				{this.state.products
+					.map ((product, i) => <ShowIngredients 
+						image_front_url={this.state.products[i].image_front_url}
+						generic_name_fr={this.state.products[i].generic_name_fr}
+						manufacturing_places={this.state.products[i].manufacturing_places}
+						/>						
+					)}
 			</div>
     	)
 	}            
