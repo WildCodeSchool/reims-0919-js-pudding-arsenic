@@ -25,6 +25,13 @@ class ShowIngredients extends React.Component {
 
 			</div>
 		)
+<<<<<<< HEAD
 	}
 }
+=======
+	}		
+}	
+
+
+>>>>>>> master
 export default ShowIngredients
