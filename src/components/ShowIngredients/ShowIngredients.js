@@ -2,16 +2,7 @@ import React from "react"
 import "./ShowIngredients.css"
 
 
-
-
 class ShowIngredients extends React.Component{
-	constructor(props){
-		super(props)
-		this.state={
-			show:true
-		}
-	}
-
 
 onDeleteClick=()=>{
 	this.props.deleteClickHandler()
@@ -38,7 +29,7 @@ render(){
 					<p className="productOrigin">{this.props.manufacturing_places}</p>
 					<button type="button" className="openModal" style={{height:'30px', width:'100px'}}>
                     Plus d'infos ...
-                </button>
+          </button>
 				</div>
 				<button 
 					type="button" 
@@ -46,7 +37,7 @@ render(){
 					style={{height:'30px', width:'30px'}}
 					onClick={this.onDeleteClick}>
                     <span>&times;</span>
-                </button>
+        </button>
 		</div>
 	)			
 }}
