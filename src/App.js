@@ -7,6 +7,7 @@ import ListOfFood from './components/ListOfFood';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import {useHistory} from 'react-router-dom';
 import PresOfFood from './components/PresOfFood'
+import PresOfFilterForCocktail from './components/PresOfFilterForCocktail'
 
 // const product = [
 //     {"image_front_url": "https://static.openfoodfacts.org/images/products/400/263/102/4222/front_fr.8.400.jpg",
@@ -83,7 +84,7 @@ class App extends React.Component {
       <div>
         <Router>
           <Route path="/" exact component={Home} />
-          <Route path="/CocktailFilters" exact component={CocktailFilters} />
+          <Route path="/CocktailFilters" exact component={PresOfFilterForCocktail} />
           <Route path="/pizzaFilters" exact component={PizzaFilters} />
           <Route path="/ShowIngredients" exact component={PresOfFood}
             deleteClickhandler={this.deleteContact} />
