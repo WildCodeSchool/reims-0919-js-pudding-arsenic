@@ -1,6 +1,6 @@
 import React from "react"
 import "./ShowIngredients.css"
-
+import Modal from "../Modal"
 
 
 
@@ -8,8 +8,10 @@ class ShowIngredients extends React.Component{
 	constructor(props){
 		super(props)
 		this.state={
-			show:true
+			revele: false,
+			cache:true
 		}
+	this.toggleModal=this.toggleModal.bind(this)
 	}
 
 
@@ -17,17 +19,16 @@ onDeleteClick=()=>{
 	this.props.deleteClickHandler()
 }
 
-// onDeleteClick(){
-// 	this.setState({
-
-// 	})
-// }
+toggleModal() {
+	this.setState({
+		revele: !this.state.revele,
+		cache:!this.state.cache
+	})
+}
 
 render(){
 	return (
 		<div className="ingredientCard">
-			{/* <i className='fa fa-window-close' style={{cursor:'pointer',float:'right', fontSize:'24px',paddingRight:'0'}}onClick={this.onDeleteClick}></i>
-			<i className='fas fa-undo-alt' style={{cursor:'pointer',float:'right', fontSize:'24px',paddingRight:'0'}}></i> */}
 			<img
 				className="productImage"
 				src={this.props.image_front_url}
@@ -36,7 +37,7 @@ render(){
 				<div className="productInfos">
 					<p className="productName">{this.props.generic_name_fr}</p>
 					<p className="productOrigin">{this.props.manufacturing_places}</p>
-					<button type="button" className="openModal" style={{height:'30px', width:'100px'}}>
+					<button type="button" className="openModal" style={{height:'30px', width:'100px'}} onClick={this.toggleModal}>
                     Plus d'infos ...
                 </button>
 				</div>
@@ -47,6 +48,11 @@ render(){
 					onClick={this.onDeleteClick}>
                     <span>&times;</span>
                 </button>
+				<Modal
+					revele={this.state.revele}
+					cache={this.toggleModal}
+				/>	
+
 		</div>
 	)			
 }}
