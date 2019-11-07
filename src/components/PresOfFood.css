@@ -14,3 +14,16 @@
     font-family: 'Bigshot One', cursive;
     font-size:3em;
     }
+
+.buttonRefresh, .buttonBack,.goBack, .goRefresh{
+    width:100px;
+    height:100px;
+}
+
+.orga{
+    display:flex;
+    margin-left:40%;
+    margin-right:40%;
+    margin-bottom:50px;
+    justify-content: space-between;
+}

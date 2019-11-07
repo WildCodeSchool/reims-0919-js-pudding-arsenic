@@ -42,7 +42,7 @@ function Home () {
 							</figure>
 
 							Get a cocktail</button>
-							<div className="label">Pizza</div>
+							<div className="label">cocktail</div>
 						</div>
 						<div className="pizzaButton">
 							<button className="pizzaButt" type="button" onClick={event=>history.push("/pizzaFilters")}>Get a pizza
@@ -54,12 +54,12 @@ function Home () {
 								></img>
 							</figure>
 							</button>
-							<div className="label">Cocktail</div>
+							<div className="label">Pizza</div>
 						</div>
-						<div className="twoButton">
+						{/* <div className="twoButton">
           				<button className="buttonT" type="button" onClick={event=>history.push("/CocktailFilters")}>Get all</button>
 						  <div className="label">Les deux</div>
-					</div>
+					</div> */}
 					</div>
 					</div>
 					<Link to="/CocktailFilters">          
