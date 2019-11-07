@@ -74,6 +74,9 @@ class App extends React.Component {
   constructor(props) {
     super(props)
   }
+  deleteContact =()=>{
+    console.log(123)
+  }
 
   render() {
     return (
@@ -82,8 +85,9 @@ class App extends React.Component {
           <Route path="/" exact component={Home} />
           <Route path="/CocktailFilters" exact component={CocktailFilters} />
           <Route path="/pizzaFilters" exact component={PizzaFilters} />
-          <Route path="/ShowIngredients" exact component={PresOfFood} />
-          {/* <Route path="/Showingredients" component={ShowIngredients}/> */}
+          <Route path="/ShowIngredients" exact component={PresOfFood}
+            deleteClickhandler={this.deleteContact} />
+          
          <header></header>
         </Router>
       </div>
