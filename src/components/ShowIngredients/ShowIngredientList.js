@@ -76,18 +76,38 @@ const product = [
 	},
 ] */
 
+/*
+{image_front_url: data.products[randomNumber].image_front_url,
+generic_name_fr: data.products[randomNumber].generic_name_fr,
+manufacturing_places: data.products[randomNumber].manufacturing_places} */
 
+
+/* {
+	"numberOfIngredients": 6,
+	"products": 
+		[
+		"Object"
+  		],
+	"image_front_url": "https://static.openfoodfacts.org/images/products/761/303/492/6814/front_fr.112.400.jpg",
+	"generic_name_fr": "Saucisses de Strasbourg",
+	"manufacturing_places": "Herta SAS - Route d'Ostreville - Zone Industrielle - 62130 Saint-Pol-sur-Ternoise,Pas-de-Calais,Nord-Pas-de-Calais,France"
+} 
+{
+  "0": {
+    "image_front_url": "https://static.openfoodfacts.org/images/products/311/190/035/0670/front_fr.3.400.jpg",
+    "generic_name_fr": "Muesli Pépites &Flocons Cassis & Graines Gourmandes",
+    "manufacturing_places": "St Symphorien de Lay,France"
+  },
+  "numberOfIngredients": 7,
+  "products": []
+} */
 
 class ShowIngredientList extends React.Component {
 	constructor (props) {
 		super(props)
 		this.state = {
 			numberOfIngredients : this.randomIngredientNumber(),
-			products : [
-				{image_front_url: "",
-				generic_name_fr: "",
-				manufacturing_places: ""},
-			]
+			products : []
 		}
 	}
 
@@ -101,47 +121,27 @@ class ShowIngredientList extends React.Component {
     return numbers[idNumbers]
 	}
 
-	getIngredient () {
-		const randomNumber = Math.floor(Math.random() * 20)
-		const randomPage = Math.floor(Math.random() * 1001)
-		const url = `https://world.openfoodfacts.org/cgi/search.pl?page=${randomPage}&page_size=20&action=process&json=1`
-		axios
-			.get (url)
-			.then (response => response.data)
-			.then (data => {
-				this.setState ({
-					products: [
-						{image_front_url: data.products[randomNumber].image_front_url,
-						generic_name_fr: data.products[randomNumber].generic_name_fr,
-						manufacturing_places: data.products[randomNumber].manufacturing_places
-						},
-						{image_front_url: data.products[randomNumber].image_front_url,
-						generic_name_fr: data.products[randomNumber].generic_name_fr,
-						manufacturing_places: data.products[randomNumber].manufacturing_places
-						},
-						{image_front_url: data.products[randomNumber].image_front_url,
-						generic_name_fr: data.products[randomNumber].generic_name_fr,
-						manufacturing_places: data.products[randomNumber].manufacturing_places
-						},
-						{image_front_url: data.products[randomNumber].image_front_url,
-						generic_name_fr: data.products[randomNumber].generic_name_fr,
-						manufacturing_places: data.products[randomNumber].manufacturing_places
-						},
-						{image_front_url: data.products[randomNumber].image_front_url,
-						generic_name_fr: data.products[randomNumber].generic_name_fr,
-						manufacturing_places: data.products[randomNumber].manufacturing_places
-						},
-						{image_front_url: data.products[randomNumber].image_front_url,
-						generic_name_fr: data.products[randomNumber].generic_name_fr,
-						manufacturing_places: data.products[randomNumber].manufacturing_places
-						},
-						{image_front_url: data.products[randomNumber].image_front_url,
-						generic_name_fr: data.products[randomNumber].generic_name_fr,
-						manufacturing_places: data.products[randomNumber].manufacturing_places
-						}								
-					]
+	getIngredient () {		
+		for (let i = 0 ; i < 7 ; i++) {
+			const randomNumber = Math.floor(Math.random() * 20)
+			const randomPage = Math.floor(Math.random() * 1001)
+			const url = `https://world.openfoodfacts.org/cgi/search.pl?page=${randomPage}&page_size=20&action=process&json=1`
+			axios
+				.get (url)
+				.then (response => response.data)
+				.then (data => {
+					this.setState ((state) => {
+						const ingredient = 
+							{image_front_url: data.products[randomNumber].image_front_url,
+							generic_name_fr: data.products[randomNumber].generic_name_fr,
+							manufacturing_places: data.products[randomNumber].manufacturing_places}
+						let products = state.products.concat(ingredient)
+						return {
+							products
+						}
+					})
 				})
-			})
+		}		
 	}
 
 	render() {
