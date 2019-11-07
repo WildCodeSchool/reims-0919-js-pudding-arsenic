@@ -29,9 +29,11 @@ class ShowIngredientList extends React.Component {
 				.then (data => {
 					this.setState ((state) => {
 						const ingredient = 
-							{image_front_url: data.products[randomNumber].image_front_url,
-							generic_name_fr: data.products[randomNumber].generic_name_fr,
-							manufacturing_places: data.products[randomNumber].manufacturing_places}
+							{
+								display: true,
+								image_front_url: data.products[randomNumber].image_front_url,
+								generic_name_fr: data.products[randomNumber].generic_name_fr,
+								manufacturing_places: data.products[randomNumber].manufacturing_places}
 						let products = state.products.concat(ingredient)
 						return {
 							products
