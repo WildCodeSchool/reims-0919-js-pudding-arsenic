@@ -16,6 +16,11 @@ function PresOfFilterForCocktail (){
             <Title />
 			<ImageBand />
             <AlcoholFilter />
+            <button className="buttonBack" type="button" onClick={event=>history.push("/")}>
+                <figure>
+                    <img className="goBack" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb6CoZQzxU75Lv2WSpgSLTCCosIh9d2h6Psbh8j4w0TGDklMjkAg&s" alt="Flèche"></img>
+                </figure>
+            </button>
             <button className="buttonGO" type="button" onClick={event=>history.push("/ShowIngredients")}>GO</button>
         </div>
     )
