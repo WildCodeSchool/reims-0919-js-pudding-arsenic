@@ -13,3 +13,15 @@ const LogicModal = ()=>{
 }
 
 export default LogicModal
+
+class Modal extends React.Component {
+    constructor() {
+        this.state = {
+            revele: false,
+        }
+    }
+
+    toggleModal() {
+        this.setState({revele: !this.state.revele})
+    }
+}
