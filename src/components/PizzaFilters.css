@@ -1,7 +1,13 @@
 #PizzaFilters {
 	padding: 0%;
-	height: 736px;
+	height: 756px;
 	background-color: rgba(206, 199, 199, 0.877);
 	display: flex;
+	flex-direction:column;
 	justify-content: space-around;
+}
+
+.Navbar{
+	position: absolute;
+	bottom:0;
 }

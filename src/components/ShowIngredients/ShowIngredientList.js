@@ -18,6 +18,13 @@ class ShowIngredientList extends React.Component {
 		let idNumbers = Math.floor(Math.random() * 5)
 		return numbers[idNumbers]
 	}
+	
+	deleteCard(image_front_url) {
+		console.log(image_front_url)
+		const newCards=this.state.products.filter(product=>
+			product.image_front_url!==image_front_url)
+			this.setState({products:newCards})
+  }
 	getIngredient () {		
 		for (let i = 0 ; i < 7 ; i++) {
 			const randomNumber = Math.floor(Math.random() * 20)
@@ -44,13 +51,14 @@ class ShowIngredientList extends React.Component {
 	}
 	render() {
 		return (
-			<div>
-				{this.state.products
+			<div>			
+        {this.state.products
 					.filter((product, index) => index < this.state.numberOfIngredients)
 					.map ((product, i) => <ShowIngredients 
 						image_front_url={this.state.products[i].image_front_url}
 						generic_name_fr={this.state.products[i].generic_name_fr}
 						manufacturing_places={this.state.products[i].manufacturing_places}
+            deleteClickHandler = {this.deleteCard.bind(this,product.image_front_url)}
 						/>						
 					)}
 			</div>
