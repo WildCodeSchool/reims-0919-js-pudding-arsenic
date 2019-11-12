@@ -27,3 +27,8 @@
     margin-bottom:50px;
     justify-content: space-between;
 }
+
+.fourchette{
+    display:flex;
+    justify-content:center;
+}

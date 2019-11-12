@@ -42,7 +42,7 @@ function Home () {
 							</figure>
 
 							Get a cocktail</button>
-							<div className="label">cocktail</div>
+							<div className="label">Cocktail</div>
 						</div>
 						<div className="pizzaButton">
 							<button className="pizzaButt" type="button" onClick={event=>history.push("/pizzaFilters")}>Get a pizza
