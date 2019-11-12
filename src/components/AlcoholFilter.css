@@ -8,46 +8,47 @@
 	height:656px;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-evenly;
+	/* justify-content: space-evenly; */
 	align-items: center;
 }
 
-.AlcoholFilter img {
+/* .AlcoholFilter img {
 	width: auto;
 	height: 20%;
-}
+} */
 
 .AlcoholFilter p {
+	margin-top: 10%;
 	padding: 0 10%;
 	text-align: center;
 }
 
-.alcoholFilterEntry {
+/* .alcoholFilterEntry {
 	margin: 10% 0;
 	display: inherit;
 	flex-direction: row;
 	justify-content: center;
 	align-items: inherit;
-}
+} */
 
-.alcoholFilterEntry .numberField {
+/* .alcoholFilterEntry .numberField {
 	width: 15%;
 	margin: 2%;
 	min-height: 100%;
-}
+} */
 
-.sweetAndSaltyButtons {
+/* .sweetAndSaltyButtons {
 	margin: 10% 0;
 	width: 80%;
 	display: inherit;
 	flex-direction: row;
 	justify-content: center;
 	align-items: inherit;
-}
+} */
 
-.sweetAndSaltyButtons button {
+/* .sweetAndSaltyButtons button {
 	min-width: 30%;
-}
+} */
 
 .AlcoholFilter{
 	background-color:rgb(43, 43, 43);

@@ -2,6 +2,7 @@ import React from "react"
 import "./AlcoholFilter.css"
 import CocktailFilters from './CocktailFilters';
 
+import SliderAlcohol from './Sliders/SliderAlcohol'
 
 class AlcoholFilter extends React.Component {
 	constructor() {
@@ -43,47 +44,42 @@ class AlcoholFilter extends React.Component {
 	}
 
 	render() {
-		//
-			return (
-				<div className="AlcoholFilter">
-					<p>Entrez une fourchette entre 0 et 100 dans les champs ci-dessous</p>
-					<div className="alcoholFilterEntry">
-						<input
-							className="numberField"
-							type="number"
-							name="alcoholMinimum"
-							min="0"
-							max="100"
-							placeholder="0"
-							value={this.state.minimumValue}
-							onChange={this.handleChangeMinimum}
-						/>
-						<input
-							className="numberField"
-							type="number"
-							name="alcoholMaximum"
-							min="0"
-							max="100"
-							placeholder="100"
-							value={this.state.maximumValue}
-							onChange={this.handleChangeMaximum}
-						/>
-					</div>
-					<div className="sweetAndSaltyButtons">
-						<button className="Sucré" onClick={this.saltyOrSweet}>
-							Sucré
-						</button>
-						<button className="Salé" onClick={this.saltyOrSweet}>
-							Salé
-						</button>
-					</div>
-					<p>
-						Vous avez choisi:
-						<br />
-						{this.state.taste}
-					</p>
-					
-				</div>
+		return (
+			<div className="AlcoholFilter">
+				{/* <img src="https://zupimages.net/up/19/43/4p0w.jpg" alt="cocktail"></img> */}
+				{/* <p>Entrez une fourchette entre 0 et 100 dans les champs ci-dessous</p> */}
+				<SliderAlcohol />
+				{/* <div className="alcoholFilterEntry">
+					<input
+						className="numberField"
+						type="number"
+						name="alcoholMinimum"
+						min="0"
+						max="100"
+						placeholder="0"
+						value={this.state.minimumValue}
+						onChange={this.handleChangeMinimum}
+					/>
+					<input
+						className="numberField"
+						type="number"
+						name="alcoholMaximum"
+						min="0"
+						max="100"
+						placeholder="100"
+						value={this.state.maximumValue}
+						onChange={this.handleChangeMaximum}
+					/>
+				</div> */}
+				{/* <div className="sweetAndSaltyButtons">
+					<button className="Sucré" onClick={this.saltyOrSweet}>
+						Sucré
+					</button>
+					<button className="Salé" onClick={this.saltyOrSweet}>
+						Salé
+					</button>
+				</div> */}
+			</div>
 			)
 		}
 }
