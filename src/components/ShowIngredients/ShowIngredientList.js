@@ -1,6 +1,8 @@
 import React from 'react'
 import ShowIngredients from './ShowIngredients'
+import axios from 'axios'
 
+/*
 const product = [
 	{
 		image_front_url:
@@ -72,20 +74,54 @@ const product = [
 		nutriments: {alcohol: 0},
 		manufacturing_places: "France",
 	},
-]
+] */
 
+/* 
 function randomIngredientNumber() {
     let numbers = [3, 4, 5, 6, 7]
     let idNumbers = Math.floor(Math.random() * 5)
     return numbers[idNumbers]
-}
+} */
 
-function ShowIngredientList () {    
-    return (
-        product
-            .splice(0, randomIngredientNumber())
-            .map(product => <ShowIngredients {...product} />)
-    )        
+class ShowIngredientList extends React.Component {
+	constructor (props) {
+		super(props)
+		this.state = {
+				image_front_url: "",
+				generic_name_fr: "",
+				nutriments: "",
+				manufacturing_places: ""		
+		}
+	}
+	componentDidMount () {
+		this.getIngredient()
+	}
+
+	getIngredient () {
+		const randomNumber = Math.floor(Math.random() * 20)
+		const randomPage = Math.floor(Math.random() * 1001)
+		const url = `https://world.openfoodfacts.org/cgi/search.pl?page=${randomPage}&page_size=20&action=process&json=1`
+		console.log(url)
+		axios
+			.get (url)
+			.then (response => response.data)
+			.then (data => {
+				this.setState ({
+					image_front_url: data.products[randomNumber].image_front_url,
+					generic_name_fr: data.products[randomNumber].generic_name_fr,
+					nutriments: data.products[randomNumber].nutriments,
+					manufacturing_places: data.products[randomNumber].manufacturing_places
+				})
+			})
+	}
+
+	render() {
+		return (
+			<div>
+				<ShowIngredients {...this.state} />
+			</div>
+    	)
+	}            
 }
 
 export default ShowIngredientList
