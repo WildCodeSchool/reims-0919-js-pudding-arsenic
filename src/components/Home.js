@@ -1,7 +1,6 @@
 import React from 'react';
 import Title from './Title';
 import CocktailFilters from './CocktailFilters';
-import PizzaFilters from './PizzaFilters';
 import './Home.css';
 import {Link}from 'react-router-dom';
 import {useHistory} from 'react-router-dom';
@@ -32,7 +31,9 @@ function Home () {
 					<div className="HomeButton">
 
 						<div className="cocktailButton">
+														
 							<button className="cocktailButt" type="button" onClick={event=>history.push("/CocktailFilters")}>
+s")}>
 							<figure>
 								<img
 								className="imageCocktail"
@@ -45,7 +46,7 @@ function Home () {
 							<div className="label">Cocktail</div>
 						</div>
 						<div className="pizzaButton">
-							<button className="pizzaButt" type="button" onClick={event=>history.push("/pizzaFilters")}>Get a pizza
+							<button className="pizzaButt" type="button" onClick={event=>history.push("/Showpizza")}>Get a pizza
 							<figure>
 								<img
 								className="imagePizza"
@@ -56,15 +57,8 @@ function Home () {
 							</button>
 							<div className="label">Pizza</div>
 						</div>
-						{/* <div className="twoButton">
-          				<button className="buttonT" type="button" onClick={event=>history.push("/CocktailFilters")}>Get all</button>
-						  <div className="label">Les deux</div>
-					</div> */}
 					</div>
 					</div>
-					{/* <Link to="/CocktailFilters">          
-          				<button className="buttonTwo" type="button" onClick={event=>history.push("/CocktailFilters")}>Get all</button>
-        			</Link> */}
 				</div>
 	)
 	

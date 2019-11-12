@@ -1,7 +1,6 @@
 import React from 'react';
 import Title from './Title';
 import CocktailFilters from './CocktailFilters';
-import PizzaFilters from './PizzaFilters';
 import './Navbar.css';
 import {Link}from 'react-router-dom';
 import {useHistory} from 'react-router-dom';

@@ -29,7 +29,8 @@ class ShowIngredientListPizza extends React.Component {
 		for (let i = 0 ; i < 5 ; i++) {
 			const randomNumber = Math.floor(Math.random() * 20)
 			const randomPage = Math.floor(Math.random() * 1001)
-			const url = `https://world.openfoodfacts.org/cgi/search.pl?page=${randomPage}&page_size=20&action=process&json=1`
+			//const url = `https://world.openfoodfacts.org/cgi/search.pl?page=${randomPage}&page_size=20&action=process&json=1`
+			const url = `https://world.openfoodfacts.org/cgi/search.pl?page=${randomPage}&page_size=20&action=process&tagtype_0=categories&tag_contains_0=does_not_contain&tag_0=beverages&sort_by=unique_scans_n&page=3&page_size=20&axis_x=energy&axis_y=products_n&action=display&json=1`
 			axios
 				.get (url)
 				.then (response => response.data)

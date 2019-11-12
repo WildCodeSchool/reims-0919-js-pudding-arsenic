@@ -2,7 +2,6 @@ import React from 'react';
 import ShowIngredients from './ShowIngredients/ShowIngredients';
 import Home from './Home';
 import CocktailFilters from './CocktailFilters';
-import PizzaFilters from './PizzaFilters';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import {useHistory} from 'react-router-dom';
 
