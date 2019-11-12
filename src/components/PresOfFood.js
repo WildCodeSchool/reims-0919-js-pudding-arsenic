@@ -4,11 +4,8 @@ import Title from './Title'
 import ImageBand from './ImageBand'
 import ShowIngredientList from "./ShowIngredients/ShowIngredientList"
 import './PresOfFood.css'
-<<<<<<< HEAD
-=======
 import {useHistory} from 'react-router-dom';
 
->>>>>>> 8eb85d1b900f421a87a7290946fe3475ef8ed84e
 
 export default PresOfFood
 function refreshpage(){
@@ -21,11 +18,7 @@ function PresOfFood (){
         <div className="PresOfFood">
             <Title />
 			<ImageBand />
-<<<<<<< HEAD
-            <h2>Votre recette de la mort </h2>
-=======
             <h2>Votre recette de la mort :</h2>
->>>>>>> 8eb85d1b900f421a87a7290946fe3475ef8ed84e
             <ShowIngredientList />
             <div className="orga">
                 <button className="buttonBack" type="button" onClick={event=>history.push("/")}>
