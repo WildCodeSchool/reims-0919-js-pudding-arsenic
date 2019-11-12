@@ -1,15 +1,15 @@
 import React from "react"
 import "./ShowIngredients.css"
 
-function refreshPage(){ 
-	window.location.reload(); 
-  }
+// function refreshPage(){ 
+// 	window.location.reload(); 
+//   }
 
 class ShowIngredients extends React.Component {
 	render() {
 		return (
 			<div>
-			<button type="button" onClick={ refreshPage }> <span>Reset all</span> </button>
+			{/* <button type="button" onClick={ refreshPage }> <span>Reset all</span> </button> */}
 			<div className="ingredientCard">
 				<img
 					className="productImage"

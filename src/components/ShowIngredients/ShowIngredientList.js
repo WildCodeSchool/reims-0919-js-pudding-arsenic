@@ -82,9 +82,11 @@ function randomIngredientNumber() {
 
 function ShowIngredientList () {    
     return (
+		
         product
             .splice(0, randomIngredientNumber())
-            .map(product => <ShowIngredients {...product} />)
+			.map(product => <ShowIngredients {...product} />)
+	
     )        
 }
 

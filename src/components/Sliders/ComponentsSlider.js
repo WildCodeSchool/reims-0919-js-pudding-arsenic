@@ -18,6 +18,26 @@ export class Handle extends Component {
     } = this.props;
     const { showTooltip } = this.state;
 
+
+  // let maxVal = 0;
+  // for(let i = 0; i<100; i++){
+  //   maxVal = {value} 
+  // }
+  // console.log(maxVal.replace('value', ''))
+  
+  
+
+// console.log(maxValue)
+    //  let maxValue = 0
+    // while({value} > maxValue){
+    //   maxValue = {value}
+    //   console.log(maxValue)
+    // }
+
+
+
+    
+    // console.log({value})
     return (
       <React.Fragment>
         {showTooltip ? (
@@ -50,20 +70,24 @@ export class Handle extends Component {
             cursor: "pointer",
             borderRadius: "50%",
             boxShadow: "1px 1px 1px 1px rgba(0, 0, 0, 0.4)",
-            backgroundColor: "darkgray"
+            backgroundColor: "#222"
           }}
           {...getHandleProps(id, {
             onMouseLeave: () => {
               this.setState({
                 showTooltip: false
               });
+              // console.log({value})
+              
             },
             onMouseOver: () => {
               this.setState({
                 showTooltip: true
               });
             }
-          })}
+          })
+        }
+          
         />
       </React.Fragment>
     );
@@ -90,7 +114,7 @@ export function Track({ source, target, getTrackProps }) {
         position: "absolute",
         height: 8,
         zIndex: 1,
-        backgroundColor: "darkgrey",
+        backgroundColor: "rgb(185,139,68)",
         borderRadius: 4,
         cursor: "pointer",
         left: `${source.percent}%`,
@@ -114,7 +138,7 @@ Track.propTypes = {
   }).isRequired,
   getTrackProps: PropTypes.func.isRequired
 };
-
+console.log(Track.propTypes.source)
 // *******************************************************
 // TICK COMPONENT
 // *******************************************************
@@ -127,7 +151,8 @@ export function Tick({ tick, count, format }) {
           marginTop: 14,
           width: 1,
           height: 5,
-          backgroundColor: "rgb(200,200,200)",
+          backgroundColor: "green",
+        //   0.822
           left: `${tick.percent}%`
         }}
       />
