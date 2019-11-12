@@ -12,7 +12,6 @@ class ShowIngredientList extends React.Component {
 	}
 	componentDidMount () {
 		this.getIngredient()
-		this.getPateAPizza()
 	}
 	randomIngredientNumber() {
 		let numbers = [3, 4, 5, 6, 7]
@@ -50,29 +49,7 @@ class ShowIngredientList extends React.Component {
 				})
 		}		
 	}
-	getPateAPizza () {		
-		for (let i = 0 ; i < 7 ; i++) {
-			const randomNumber = Math.floor(Math.random() * 20)
-			const url = `https://fr.openfoodfacts.org/cgi/search.pl?search_terms=p%C3%A2te+%C3%A0+d%C3%A9rouler&search_simple=1&action=process`
-			axios
-				.get (url)
-				.then (response => response.data)
-				.then (data => {
-					this.setState ((state) => {
-						const ingredient = 
-							{
-								display: true,
-								image_front_url: data.products[randomNumber].image_front_url,
-								generic_name_fr: data.products[randomNumber].generic_name_fr,
-								manufacturing_places: data.products[randomNumber].manufacturing_places}
-						let pates = state.pates.concat(ingredient)
-						return {
-							pates
-						}
-					})
-				})
-		}		
-	}
+	
 
 	render() {
 		return (

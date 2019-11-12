@@ -62,9 +62,9 @@ function Home () {
 					</div> */}
 					</div>
 					</div>
-					<Link to="/CocktailFilters">          
+					{/* <Link to="/CocktailFilters">          
           				<button className="buttonTwo" type="button" onClick={event=>history.push("/CocktailFilters")}>Get all</button>
-        			</Link>
+        			</Link> */}
 				</div>
 	)
 	
