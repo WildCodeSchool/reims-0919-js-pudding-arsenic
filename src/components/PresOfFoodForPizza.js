@@ -3,6 +3,8 @@ import "./ShowIngredients/ShowIngredients.css"
 import Title from './Title'
 import ImageBand from './ImageBand'
 import ShowPateList from "./ShowIngredients/ShowPateList"
+import ShowCheeseList from "./ShowIngredients/ShowCheeseList"
+import ShowIngredientListPizza from "./ShowIngredients/ShowIngredientListPizza"
 import ShowIngredientList from "./ShowIngredients/ShowIngredientList"
 import './PresOfFood.css'
 import {useHistory} from 'react-router-dom';
@@ -20,7 +22,10 @@ function PresOfFood (){
             <Title />
 			<ImageBand />
             <h2>Votre recette de la mort :</h2>
+            <ShowPateList />
+            <ShowCheeseList />
             <ShowIngredientList />
+            <ShowIngredientListPizza />
             <div className="orga">
                 <button className="buttonBack" type="button" onClick={event=>history.push("/")}>
                     <figure>
