@@ -46,7 +46,6 @@ class AlcoholFilter extends React.Component {
 		//
 			return (
 				<div className="AlcoholFilter">
-					<img src="https://zupimages.net/up/19/43/4p0w.jpg" alt="cocktail"></img>
 					<p>Entrez une fourchette entre 0 et 100 dans les champs ci-dessous</p>
 					<div className="alcoholFilterEntry">
 						<input
