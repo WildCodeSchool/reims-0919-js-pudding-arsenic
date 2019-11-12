@@ -19,18 +19,24 @@ class App extends React.Component {
   render() {
     return (
       <div className = "formSlider">
-      <form className="form">
-        <InputRange
-          draggableTrack
-          maxValue={100}
-          minValue={0}
-          onChange={value => this.setState({ Taux: value })}
-          // onChangeComplete={value => console.log(value)}
-          //let Label={value => (value)}
-          value={this.state.Taux} />
-      </form>
-    <h3>Le taux d'alcool de votre brevage sera compris entre {this.state.Taux.min} et {this.state.Taux.max}°</h3>
-</div>
+        <div className = "btnSelectAlcohol">
+          <buton className = "btnS">Petit joueur</buton>
+          <buton className = "btnA">Diabol hique</buton>
+        </div>
+        <div>
+          <form className="form">
+            <InputRange
+              draggableTrack
+              maxValue={100}
+              minValue={0}
+              onChange={value => this.setState({ Taux: value })}
+              // onChangeComplete={value => console.log(value)}
+              //let Label={value => (value)}
+              value={this.state.Taux} />
+          </form>
+          <h3>Le taux d'alcool de votre brevage sera compris entre {this.state.Taux.min} et {this.state.Taux.max}°</h3>
+        </div>
+      </div>
     );
   }
 }
