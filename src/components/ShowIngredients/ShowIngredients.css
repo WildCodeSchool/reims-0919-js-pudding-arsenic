@@ -48,3 +48,18 @@
 	font-size: 3em;
 	color: rgb(197, 197, 197);
 }
+
+@media only screen and (max-width: 415px) {
+	.ingredientCard {
+		margin: 1em auto;
+		padding: 0;
+		width: 90%;		
+	}
+	.productImage {
+		max-width: 40%;
+		max-height: 30vh;
+		align-self: center;
+		padding: 0.5em;
+	}
+
+}
