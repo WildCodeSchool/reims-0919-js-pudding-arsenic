@@ -61,7 +61,9 @@ class ShowIngredientList extends React.Component {
 						image_front_url={this.state.products[i].image_front_url}
 						generic_name_fr={this.state.products[i].generic_name_fr}
 						manufacturing_places={this.state.products[i].manufacturing_places}
-            deleteClickHandler = {this.deleteCard.bind(this,product.image_front_url)}
+						code_ID={this.state.products[i].code}
+						ingredients_text={this.state.products[i].ingredients_text}
+            			deleteClickHandler = {this.deleteCard.bind(this,product.image_front_url)}
 						/>						
 					)}
 			</div>
