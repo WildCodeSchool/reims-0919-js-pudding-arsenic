@@ -1,7 +1,6 @@
 import React from 'react';
 import Title from './Title';
 import CocktailFilters from './CocktailFilters';
-import PizzaFilters from './PizzaFilters';
 import './Home.css';
 import {Link}from 'react-router-dom';
 import {useHistory} from 'react-router-dom';
@@ -43,7 +42,7 @@ function Home () {
 							<div className="label">Cocktail</div>
 						</div>
 						<div className="pizzaButton">
-							<button className="pizzaButt" type="button" onClick={event=>history.push("/pizzaFilters")}>Get a pizza
+							<button className="pizzaButt" type="button" onClick={event=>history.push("/Showpizza")}>Get a pizza
 								<figure>
 									<img
 									className="imagePizza"
