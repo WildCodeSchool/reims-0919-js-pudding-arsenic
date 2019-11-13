@@ -12,10 +12,10 @@ function Home () {
 		return (
 			<div className="Home">
 				<div>
-				<Title />
-				<img className="séparateur" src="https://zupimages.net/up/19/44/l8sr.png" alt="séparateur"></img>
-				{/* <img className="séparateur" src="http://meriamr.m.e.pic.centerblog.net/066bb9f4.gif" alt="séparateur"></img> */}
-				<ImageBand />
+					<Title />
+					<img className="séparateur" src="https://zupimages.net/up/19/44/l8sr.png" alt="séparateur"></img>
+					{/* <img className="séparateur" src="http://meriamr.m.e.pic.centerblog.net/066bb9f4.gif" alt="séparateur"></img> */}
+					<ImageBand />
 				</div>
 				<div className="HomeText">
 					<p>
@@ -28,9 +28,8 @@ function Home () {
 					</p>
 				</div>
 				<div className="affichageBouton">
-				<h2>Sélectionner votre poison :</h2>
+					<h2>Sélectionner votre poison :</h2>
 					<div className="HomeButton">
-
 						<div className="cocktailButton">
 							<button className="cocktailButt" type="button" onClick={event=>history.push("/CocktailFilters")}>
 							<figure>
@@ -40,34 +39,25 @@ function Home () {
 								alt="cocktail"
 								></img>
 							</figure>
-
 							Get a cocktail</button>
 							<div className="label">Cocktail</div>
 						</div>
 						<div className="pizzaButton">
 							<button className="pizzaButt" type="button" onClick={event=>history.push("/pizzaFilters")}>Get a pizza
-							<figure>
-								<img
-								className="imagePizza"
-								src="https://zupimages.net/up/19/45/uvpl.jpg"
-								alt="pizza"
-								></img>
-							</figure>
+								<figure>
+									<img
+									className="imagePizza"
+									src="https://zupimages.net/up/19/45/uvpl.jpg"
+									alt="pizza"
+									></img>
+								</figure>
 							</button>
 							<div className="label">Pizza</div>
 						</div>
-						{/* <div className="twoButton">
-          				<button className="buttonT" type="button" onClick={event=>history.push("/CocktailFilters")}>Get all</button>
-						  <div className="label">Les deux</div>
-					</div> */}
 					</div>
-					</div>
-					{/* <Link to="/CocktailFilters">          
-          				<button className="buttonTwo" type="button" onClick={event=>history.push("/CocktailFilters")}>Get all</button>
-        			</Link> */}
 				</div>
-	)
-	
+			</div>
+		)	
 }
 
 export default Home
