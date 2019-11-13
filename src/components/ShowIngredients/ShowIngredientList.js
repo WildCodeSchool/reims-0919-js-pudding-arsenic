@@ -17,14 +17,12 @@ class ShowIngredientList extends React.Component {
 		let numbers = [3, 4, 5, 6, 7]
 		let idNumbers = Math.floor(Math.random() * 5)
 		return numbers[idNumbers]
-	}
-	
+	}	
 	deleteCard(image_front_url) {
-		console.log(image_front_url)
 		const newCards=this.state.products.filter(product=>
 			product.image_front_url!==image_front_url)
 			this.setState({products:newCards})
-  }
+  	}
 	getIngredient () {		
 		for (let i = 0 ; i < 7 ; i++) {
 			const randomNumber = Math.floor(Math.random() * 20)
@@ -40,7 +38,8 @@ class ShowIngredientList extends React.Component {
 								display: true,
 								image_front_url: data.products[randomNumber].image_front_url,
 								generic_name_fr: data.products[randomNumber].generic_name_fr,
-								manufacturing_places: data.products[randomNumber].manufacturing_places}
+								manufacturing_places: data.products[randomNumber].manufacturing_places
+							}
 						let products = state.products.concat(ingredient)
 						return {
 							products
