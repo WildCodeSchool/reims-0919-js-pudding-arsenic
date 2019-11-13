@@ -53,7 +53,9 @@
 	.ingredientCard {
 		margin: 1em auto;
 		padding: 0;
-		width: 90%;		
+		width: 90%;
+		min-height: 35vh;
+		max-height: auto;	
 	}
 	.productImage {
 		max-width: 40%;
@@ -61,5 +63,7 @@
 		align-self: center;
 		padding: 0.5em;
 	}
-
+	.productName, .productOrigin {
+		max-width: 100%;
+	}
 }
