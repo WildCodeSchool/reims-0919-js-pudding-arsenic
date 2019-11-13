@@ -6,7 +6,6 @@ import PresOfFood from './components/PresOfFood'
 import PresOfFilterForCocktail from './components/PresOfFilterForCocktail'
 
 
-
 class App extends React.Component {
   constructor(props) {
     super(props)
