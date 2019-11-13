@@ -8,9 +8,11 @@
 /* .showSlider{
   display: none;
 } */
+.titleChoise{
+  margin-bottom: 40px;
+}
 .btnSelectAlcohol{
 margin: 50px;
-
 }
 .btnA{
   background: #a88f1e;
@@ -37,6 +39,9 @@ margin: 50px;
   box-shadow: -3px 3px 15px 1px rgba(241, 210, 144, 0.616);
   transition: 0.3s;
   color:#4e420d;
+}
+.showTitleNo{
+  display:none;
 }
 .form{
   margin: 50px;
