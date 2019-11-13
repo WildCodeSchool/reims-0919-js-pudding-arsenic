@@ -15,6 +15,7 @@ const Modal= ({revele, cache, image}) => revele ?(
                     <div className="ingredientCard">
                         <p className="productOrigin">Va chercher ton bonheur sur : https://fr.openfoodfacts.org/data</p>
                         <img className="imgOpenFoodFacts" src={image} alt="imgOpenFoodFacts"></img>
+                        <img className="imgingredientsUrl" src={image_ingredients_url} alt="imgingredientsUrl"></img>
                     </div>
                 </div> 
             </div>
