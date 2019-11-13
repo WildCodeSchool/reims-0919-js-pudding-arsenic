@@ -3,7 +3,6 @@ import ShowIngredients from './components/ShowIngredients/ShowIngredients';
 import Home from './components/Home';
 import CocktailFilters from './components/CocktailFilters';
 import PizzaFilters from './components/PizzaFilters';
-import ListOfFood from './components/ListOfFood';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import {useHistory} from 'react-router-dom';
 import PresOfFood from './components/PresOfFood'
