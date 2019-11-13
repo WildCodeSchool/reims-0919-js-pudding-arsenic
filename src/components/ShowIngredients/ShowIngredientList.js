@@ -38,7 +38,9 @@ class ShowIngredientList extends React.Component {
 								display: true,
 								image_front_url: data.products[randomNumber].image_front_url,
 								generic_name_fr: data.products[randomNumber].product_name_fr,
-								manufacturing_places: data.products[randomNumber].manufacturing_places
+								manufacturing_places: data.products[randomNumber].manufacturing_places,
+								code_ID: data.products[randomNumber].code,
+								ingredients_text: data.products[randomNumber].ingredients_text,
 							}
 						let products = state.products.concat(ingredient)
 						return {

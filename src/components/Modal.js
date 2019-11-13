@@ -4,7 +4,7 @@ import ShowIngredients from './ShowIngredients/ShowIngredients'
 
 
 
-const Modal= ({revele, cache, image}) => revele ?(
+const Modal= ({revele, cache, code, ingredients_text, nom}) => revele ?(
     <React.Fragment>
         <div className="overlay">
             <div className="wrapper">
@@ -14,7 +14,10 @@ const Modal= ({revele, cache, image}) => revele ?(
                     </button>
                     <div className="ingredientCard">
                         <p className="productOrigin">Va chercher ton bonheur sur : https://fr.openfoodfacts.org/data</p>
-                        <img className="imgOpenFoodFacts" src={image} alt="imgOpenFoodFacts"></img>
+                        <img className="imgOpenFoodFacts" src={'https://static.openfoodfacts.org/images/misc/openfoodfacts-logo-fr-178x150.png'} alt="imgOpenFoodFacts"></img>
+                        <p className="productOrigin">Nom : {nom}</p>
+                        <p className="productOrigin">Code : {code}</p>
+                        <p className="productOrigin">Ingrédients : {ingredients_text}</p>
                     </div>
                 </div> 
             </div>
