@@ -35,7 +35,7 @@ render(){
 			<div className="productInfos">
 				<p className="productName">{this.props.generic_name_fr}</p>
 				<p className="productOrigin">{this.props.manufacturing_places}</p>
-				<button type="button" className="openModal" style={{height:'30px', width:'100px'}} onClick={this.toggleModal}>
+				<button type="button" className="openModal" onClick={this.toggleModal}>
 				Plus d'infos ...
 				</button>
 			</div>

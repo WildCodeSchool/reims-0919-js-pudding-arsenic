@@ -31,7 +31,6 @@
 	width: 40%;
 	justify-content: space-around;
 	align-items: center;
-	background-color: rgb(28, 28, 28);
 }
 .productInfos p {
 	text-align: center;
@@ -40,6 +39,17 @@
 }
 .productName {
 	font-weight: bold;
+}
+.openModal {
+	height:'30px'; 
+	width:'100px';
+	background-color:rgb(15, 15, 15);
+	color: rgb(231, 231, 231);
+	border-radius: 2px;
+	border-width: 1px;
+	border-color: rgba(185, 139, 68, 0.822);
+	padding: 0.5em;
+
 }
 .close {
 	align-self: flex-start;
