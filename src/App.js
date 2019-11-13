@@ -3,14 +3,17 @@ import ShowIngredients from './components/ShowIngredients/ShowIngredients';
 import Home from './components/Home';
 import CocktailFilters from './components/CocktailFilters';
 import PizzaFilters from './components/PizzaFilters';
-import ListOfFood from './components/ListOfFood';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import {useHistory} from 'react-router-dom';
 import PresOfFood from './components/PresOfFood'
+import PresOfFilterForCocktail from './components/PresOfFilterForCocktail'
 
 class App extends React.Component {
   constructor(props) {
     super(props)
+  }
+  deleteContact =()=>{
+    console.log(123)
   }
 
   render() {
@@ -18,10 +21,11 @@ class App extends React.Component {
       <div>
         <Router>
           <Route path="/" exact component={Home} />
-          <Route path="/CocktailFilters" exact component={CocktailFilters} />
+          <Route path="/CocktailFilters" exact component={PresOfFilterForCocktail} />
           <Route path="/pizzaFilters" exact component={PizzaFilters} />
-          <Route path="/ShowIngredients" exact component={PresOfFood} />
-          {/* <Route path="/Showingredients" component={ShowIngredients}/> */}
+          <Route path="/ShowIngredients" exact component={PresOfFood}
+            deleteClickhandler={this.deleteContact} />
+          
          <header></header>
         </Router>
       </div>
