@@ -20,10 +20,11 @@ class App extends React.Component {
     return (
       <div className = "formSlider">
         <div className = "btnSelectAlcohol">
+          <h3>Choisissez votre Cocktail ....</h3>
           <buton className = "btnS">Petit joueur</buton>
           <buton className = "btnA">Diabol hique</buton>
         </div>
-        <div>
+        <div className = "showSlider">
           <form className="form">
             <InputRange
               draggableTrack
