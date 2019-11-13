@@ -23,7 +23,7 @@ class ShowIngredientList extends React.Component {
 		const newCards=this.state.products.filter(product=>
 			product.image_front_url!==image_front_url)
 			this.setState({products:newCards})
-  }
+  	}
 	getIngredient () {
 		for (let i = 0 ; i < 7 ; i++) {
 			const randomNumber = Math.floor(Math.random() * 20)
