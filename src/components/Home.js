@@ -14,10 +14,7 @@ function Home () {
 				<div>
 					<Title />
 					<img className="séparateur" src="https://zupimages.net/up/19/44/l8sr.png" alt="séparateur"></img>
-<<<<<<< HEAD
-=======
 					{/* <img className="séparateur" src="http://meriamr.m.e.pic.centerblog.net/066bb9f4.gif" alt="séparateur"></img> */}
->>>>>>> dev
 					<ImageBand />
 				</div>
 				<div className="HomeText">
@@ -32,12 +29,7 @@ function Home () {
 				</div>
 				<div className="affichageBouton">
 					<h2>Sélectionner votre poison :</h2>
-<<<<<<< HEAD
-						<div className="HomeButton">
-
-=======
 					<div className="HomeButton">
->>>>>>> dev
 						<div className="cocktailButton">
 							<button className="cocktailButt" type="button" onClick={event=>history.push("/CocktailFilters")}>
 							<figure>
