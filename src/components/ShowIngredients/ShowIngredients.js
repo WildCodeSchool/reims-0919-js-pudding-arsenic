@@ -3,7 +3,6 @@ import "./ShowIngredients.css"
 import Modal from "../Modal"
 
 
-
 class ShowIngredients extends React.Component{
 	constructor(props){
 		super(props)

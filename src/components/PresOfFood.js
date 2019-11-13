@@ -4,7 +4,6 @@ import Title from './Title'
 import ImageBand from './ImageBand'
 import ShowIngredientList from "./ShowIngredients/ShowIngredientList"
 import './PresOfFood.css'
-import { FaBeer } from 'react-icons/fa'
 
 export default PresOfFood
 
@@ -13,7 +12,7 @@ function PresOfFood (){
         <div className="PresOfFood">
             <Title />
 			<ImageBand />
-            <h2>Votre recette de la mort <FaBeer /></h2>
+            <h2>Votre recette de la mort </h2>
             <ShowIngredientList />
         </div>
     )

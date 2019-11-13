@@ -9,12 +9,6 @@
 		text-align: center;
 		margin-bottom:10%;
 		color:silver;
-		/* background: -webkit-linear-gradient(
-			grey,
-			rgba(185, 139, 68, 0.822),
-			white);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent; */
 		font-family: 'Bigshot One', cursive;
 		font-size:1.7em;
 		}
@@ -41,7 +35,6 @@
 		-o-transform: skew(20deg);
 		tranform: skew(20deg);
 		display:block;
-		
 		margin-left:auto;
 		margin-right:auto;
 	
@@ -53,7 +46,6 @@
 		-o-transform: skew(-20deg);
 		tranform: skew(-20deg);
 		display:block;
-		
 		margin-left:auto;
 		margin-right:auto;
 	
@@ -203,12 +195,6 @@ a.current{
 		text-align: center;
 		margin-bottom:5%;
 		color:silver;
-		/* background: -webkit-linear-gradient(
-			grey,
-			rgba(185, 139, 68, 0.822),
-			white);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent; */
 		font-family: 'Bigshot One', cursive;
 		font-size:1.7em;
 		}
@@ -304,12 +290,6 @@ a.current{
 		margin-top:3%;
 		margin-bottom:3%;
 		color:black;
-		/* background: -webkit-linear-gradient(
-			grey,
-			rgba(185, 139, 68, 0.822),
-			white);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent; */
 		font-family: 'Bigshot One', cursive;
 		font-size:1.9em;
 		}
