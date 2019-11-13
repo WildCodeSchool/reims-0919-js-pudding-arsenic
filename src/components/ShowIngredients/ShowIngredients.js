@@ -50,6 +50,7 @@ render(){
 				<Modal
 					revele={this.state.revele}
 					cache={this.toggleModal}
+					image={this.props.image_front_url}
 				/>	
 
 		</div>
