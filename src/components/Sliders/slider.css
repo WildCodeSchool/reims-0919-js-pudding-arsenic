@@ -8,8 +8,8 @@
 /* .showSlider{
   display: none;
 } */
-.titleChoise{
-  margin-bottom: 40px;
+.titlechoiseAlcohol{
+  margin: 40px;
 }
 .btnSelectAlcohol{
 margin: 50px;
@@ -20,6 +20,7 @@ margin: 50px;
   border-top-right-radius: 100px;
   border-bottom-right-radius: 100px;
   cursor: pointer;
+  font-size: 1em;
 }
 .btnA:hover{
   background: #dabd40;
@@ -33,6 +34,8 @@ margin: 50px;
   border-top-left-radius: 100px;
   border-bottom-left-radius: 100px;
   cursor: pointer;
+  font-size: 1em;
+
 }
 .btnS:hover{
   background: #dabd40;
@@ -40,9 +43,9 @@ margin: 50px;
   transition: 0.3s;
   color:#4e420d;
 }
-.showTitleNo{
+/* .showTitleNo{
   display:none;
-}
+} */
 .form{
   margin: 50px;
 }

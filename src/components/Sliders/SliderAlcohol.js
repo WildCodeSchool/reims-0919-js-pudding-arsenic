@@ -5,46 +5,48 @@ import './slider.css' ;
 import '../../../node_modules/react-input-range/lib/css/index.css'
 
  
-class App extends React.Component {
+class SliderAlcohol extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       Taux: {
         min: 0,
         max: 0,
-        choiseAlcohol: '',
-        choiseNo: '',
+        
       },
+      choiseAlcohol: true,
+        choiseNo: true,
     };
   }
 
   showSliders=()=>{
     // style={display: this.state.choiseAlcohol ? 'none' : 'block' }
       this.setState({
-        choiseAlcohol : false,
-        choiseNo : true
+        
+        choiseAlcohol : true,
+          choiseNo : false
       })
     }
     showNoAlcohol=()=>{
       // style={display: this.state.choiseAlcohol ? 'none' : 'block' }
         this.setState({
-          choiseAlcohol : true,
-          choiseNo : false,
+          choiseAlcohol : false,
+          choiseNo : true
         })
       }
 
   render() {
     return (
       <div className = "formSlider">
+          <h3 className = "titlechoiseAlcohol">Choisissez votre Cocktail.</h3>
         <div className = "btnSelectAlcohol">
-          <h3 className = "titlechoiseAlcohol">Choisissez votre Cocktail ....</h3>
           <button className = "btnS" onClick={this.showNoAlcohol}>Sans Alcool</button>
           <button className = "btnA" onClick={this.showSliders}>Diabol hique</button>
         </div>
         <div>
           <h1 className = "showTitleNo" style={ {display: this.state.choiseAlcohol ? 'none' : 'block'} }>Petit joueur !</h1>
         </div>
-        <div className = "showSlider" style={ {display: this.state.choiseAlcohol ? 'block' : 'none'} }>
+        <div className = "showSlider" style={ {display: this.state.choiseNo ? 'none' : 'block'} }>
           <form className="form">
             <InputRange
               draggableTrack
@@ -60,4 +62,4 @@ class App extends React.Component {
   }
 }
   
-  export default App;
+  export default SliderAlcohol;
