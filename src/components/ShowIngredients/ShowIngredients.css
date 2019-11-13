@@ -12,11 +12,10 @@
 	padding: 0.5em;
 	width: 50%;
 	height: 35vh;
-	background-color:rgb(21, 21, 21);
-	border: solid rgb(233, 178, 28) 2px;
+	background-color:rgb(15, 15, 15);
 	border-radius: 5px;
 	border-width:5px 5px 5px 5px;
-    border-style:solid double;
+    border-style: double;
     border-color: rgba(185, 139, 68, 0.822);
 	color: rgb(231, 231, 231);	
 }
@@ -43,9 +42,8 @@
 	font-weight: bold;
 }
 .close {
-	width: 1em;
-	height: 1em;
-	background-color: rgb(21, 21, 21);
+	align-self: flex-start;
+	background-color: rgb(15, 15, 15);
 	border: none;
 	font-size: 3em;
 	color: rgb(197, 197, 197);
