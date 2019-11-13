@@ -1,9 +1,11 @@
 import React from 'react';
 import Home from './components/Home';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import {BrowserRouter as Router, Route} from 'react-router-dom'
 import PresOfFoodForPizza from './components/PresOfFoodForPizza'
 import PresOfFood from './components/PresOfFood'
 import PresOfFilterForCocktail from './components/PresOfFilterForCocktail'
+
+
 
 class App extends React.Component {
   constructor(props) {

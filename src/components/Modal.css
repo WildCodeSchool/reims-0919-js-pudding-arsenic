@@ -7,11 +7,11 @@
     bottom:0;
   }
   .wrapper{
-    background:white;
+    background:rgba(0,0,0,0.8);
     height: 500px;
     width: 700px;
     position:absolute;
-    top:50%;
+    top:5%;
     left:50%;
     transform:translate(-50%,-50%);
   }

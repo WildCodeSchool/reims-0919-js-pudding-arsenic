@@ -42,6 +42,7 @@ render(){
 			/>
 				<div className="productInfos">
 					<p className="productName">{this.props.generic_name_fr}</p>
+					<p className="productName">{this.props.generic_code_ID}</p>
 					<p className="productOrigin">{this.props.manufacturing_places}</p>
 					<button type="button" className="openModal" style={{height:'30px', width:'100px'}} onClick={this.toggleModal}>
                     Plus d'infos ...
@@ -50,6 +51,10 @@ render(){
 				<Modal
 					revele={this.state.revele}
 					cache={this.toggleModal}
+					image={this.props.image_front_url}
+					nom={this.props.generic_name_fr}
+					code={this.props.code_ID}
+					ingredients_text={this.props.ingredients_text}
 				/>	
 
 		</div>
