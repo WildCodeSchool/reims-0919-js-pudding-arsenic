@@ -3,11 +3,8 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  /* height: 80%; */
 }
-/* .showSlider{
-  display: none;
-} */
+
 .titlechoiseAlcohol{
   margin: 40px;
 }
@@ -43,9 +40,6 @@ margin: 50px;
   transition: 0.3s;
   color:#4e420d;
 }
-/* .showTitleNo{
-  display:none;
-} */
 .form{
   margin: 50px;
 }

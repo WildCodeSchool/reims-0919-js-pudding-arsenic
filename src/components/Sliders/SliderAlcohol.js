@@ -1,5 +1,4 @@
 import React from 'react';
-//import ReactDOM from 'react-dom';
 import InputRange from 'react-input-range';
 import './slider.css' ;
 import '../../../node_modules/react-input-range/lib/css/index.css'
@@ -20,7 +19,6 @@ class SliderAlcohol extends React.Component {
   }
 
   showSliders=()=>{
-    // style={display: this.state.choiseAlcohol ? 'none' : 'block' }
       this.setState({
         
         choiseAlcohol : true,
@@ -28,7 +26,6 @@ class SliderAlcohol extends React.Component {
       })
     }
     showNoAlcohol=()=>{
-      // style={display: this.state.choiseAlcohol ? 'none' : 'block' }
         this.setState({
           choiseAlcohol : false,
           choiseNo : true
