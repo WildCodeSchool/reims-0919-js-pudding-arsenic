@@ -2,6 +2,7 @@ import React from "react"
 import "./ShowIngredients.css"
 import Modal from "../Modal"
 
+
 class ShowIngredients extends React.Component{
 	constructor(props){
 		super(props)
@@ -44,9 +45,8 @@ render(){
 					<p className="productOrigin">{this.props.manufacturing_places}</p>
 					<button type="button" className="openModal" style={{height:'30px', width:'100px'}} onClick={this.toggleModal}>
                     Plus d'infos ...
-          </button>
+                </button>
 				</div>
-
 				<Modal
 					revele={this.state.revele}
 					cache={this.toggleModal}
