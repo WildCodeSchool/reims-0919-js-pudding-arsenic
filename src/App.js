@@ -20,6 +20,7 @@ class App extends React.Component {
         <Router>
           <Route path="/" exact component={Home} />
           <Route path="/CocktailFilters" exact component={PresOfFilterForCocktail} />
+          <Route path="/pizzaFilters" exact component={PizzaFilters} />
           <Route path="/ShowIngredients" exact component={PresOfFood}
             deleteClickhandler={this.deleteContact} />
           <Route path="/Showpizza" exact component={PresOfFoodForPizza} />

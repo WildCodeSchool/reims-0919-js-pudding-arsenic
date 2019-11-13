@@ -7,7 +7,7 @@ import Navbar from "./Navbar"
 function CocktailFilters() {
 	return (
 		<div id="CocktailFilters">
-			<h2>page de filtres pour cocktail</h2>
+			<h2 className="CocktF">page de filtres pour cocktail</h2>
 			<div>
 			<AlcoholFilter />
 			<Navbar />

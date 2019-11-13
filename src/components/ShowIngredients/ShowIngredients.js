@@ -28,6 +28,13 @@ toggleModal() {
 render(){
 	return (
 		<div className="ingredientCard">
+				<button 
+					type="button" 
+					className="close" 
+					style={{height:'30px', width:'30px'}}
+					onClick={this.onDeleteClick}>
+                    <span>&times;</span>
+                </button>
 			<img
 				className="productImage"
 				src={this.props.image_front_url}
@@ -40,6 +47,7 @@ render(){
                     Plus d'infos ...
                 </button>
 				</div>
+<<<<<<< HEAD
 				<button 
 					type="button" 
 					className="close" 
@@ -47,6 +55,9 @@ render(){
 					onClick={this.onDeleteClick}>
                     <span>&times;</span>
                 </button>
+=======
+
+>>>>>>> dev
 				<Modal
 					revele={this.state.revele}
 					cache={this.toggleModal}
