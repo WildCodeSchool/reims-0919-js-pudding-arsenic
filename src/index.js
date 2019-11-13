@@ -5,10 +5,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App.js';
 import * as serviceWorker from './serviceWorker';
-<<<<<<< HEAD
-=======
 //import 'font-awesome/css/font-awesome.min.css';
->>>>>>> dev
 
 
 
