@@ -1,6 +1,5 @@
 import React from "react"
 import "./CocktailFilters.css"
-import "./PizzaFilters.css"
 import AlcoholFilter from "./AlcoholFilter"
 import Navbar from "./Navbar"
 

@@ -2,6 +2,7 @@ import React from "react"
 import "./ShowIngredients.css"
 import Modal from "../Modal"
 
+
 class ShowIngredients extends React.Component{
 	constructor(props){
 		super(props)
@@ -50,6 +51,10 @@ render(){
 				<Modal
 					revele={this.state.revele}
 					cache={this.toggleModal}
+					image={this.props.image_front_url}
+					nom={this.props.generic_name_fr}
+					code={this.props.code_ID}
+					ingredients_text={this.props.ingredients_text}
 				/>	
 
 		</div>

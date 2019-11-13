@@ -2,7 +2,6 @@ import React from "react"
 import "./ShowIngredients/ShowIngredients.css"
 import Title from './Title'
 import ImageBand from './ImageBand'
-import ShowPateList from "./ShowIngredients/ShowPateList"
 import ShowIngredientList from "./ShowIngredients/ShowIngredientList"
 import './PresOfFood.css'
 import {useHistory} from 'react-router-dom';

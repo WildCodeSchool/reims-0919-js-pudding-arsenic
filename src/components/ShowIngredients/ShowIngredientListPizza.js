@@ -29,7 +29,8 @@ class ShowIngredientListPizza extends React.Component {
 		for (let i = 0 ; i < 5 ; i++) {
 			const randomNumber = Math.floor(Math.random() * 20)
 			const randomPage = Math.floor(Math.random() * 1001)
-			const url = `https://world.openfoodfacts.org/cgi/search.pl?page=${randomPage}&page_size=20&action=process&json=1`
+			//const url = `https://world.openfoodfacts.org/cgi/search.pl?page=${randomPage}&page_size=20&action=process&json=1`
+			const url = `https://world.openfoodfacts.org/cgi/search.pl?page=${randomPage}&page_size=20&action=process&tagtype_0=categories&tag_contains_0=does_not_contain&tag_0=beverages&sort_by=unique_scans_n&page=3&page_size=20&axis_x=energy&axis_y=products_n&action=display&json=1`
 			axios
 				.get (url)
 				.then (response => response.data)
@@ -39,7 +40,7 @@ class ShowIngredientListPizza extends React.Component {
 							{
 								display: true,
 								image_front_url: data.products[randomNumber].image_front_url,
-								generic_name_fr: data.products[randomNumber].generic_name_fr,
+								generic_name_fr: data.products[randomNumber].product_name_fr,
 								manufacturing_places: data.products[randomNumber].manufacturing_places}
 						let products = state.products.concat(ingredient)
 						return {

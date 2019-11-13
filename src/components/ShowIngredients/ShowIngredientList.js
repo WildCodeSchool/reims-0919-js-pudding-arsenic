@@ -27,7 +27,7 @@ class ShowIngredientList extends React.Component {
 		for (let i = 0 ; i < 7 ; i++) {
 			const randomNumber = Math.floor(Math.random() * 20)
 			const randomPage = Math.floor(Math.random() * 1001)
-			const url = `https://world.openfoodfacts.org/cgi/search.pl?page=${randomPage}&page_size=20&action=process&json=1`
+			const url =	`https://world.openfoodfacts.org/cgi/search.pl?page=${randomPage}&page_size=20&action=process&tagtype_0=categories&tag_contains_0=contains&tag_0=beverages&sort_by=unique_scans_n&page=1&page_size=20&axis_x=energy&axis_y=products_n&action=display&json=1`
 			axios
 				.get (url)
 				.then (response => response.data)
@@ -37,8 +37,10 @@ class ShowIngredientList extends React.Component {
 							{
 								display: true,
 								image_front_url: data.products[randomNumber].image_front_url,
-								generic_name_fr: data.products[randomNumber].generic_name_fr,
-								manufacturing_places: data.products[randomNumber].manufacturing_places
+								generic_name_fr: data.products[randomNumber].product_name_fr,
+								manufacturing_places: data.products[randomNumber].manufacturing_places,
+								code_ID: data.products[randomNumber].code,
+								ingredients_text: data.products[randomNumber].ingredients_text,
 							}
 						let products = state.products.concat(ingredient)
 						return {
@@ -59,6 +61,11 @@ class ShowIngredientList extends React.Component {
 						image_front_url={this.state.products[i].image_front_url}
 						generic_name_fr={this.state.products[i].generic_name_fr}
 						manufacturing_places={this.state.products[i].manufacturing_places}
+<<<<<<< HEAD
+=======
+						code_ID={this.state.products[i].code}
+						ingredients_text={this.state.products[i].ingredients_text}
+>>>>>>> dev
             			deleteClickHandler = {this.deleteCard.bind(this,product.image_front_url)}
 						/>						
 					)}
