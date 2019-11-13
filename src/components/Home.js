@@ -27,9 +27,7 @@ function Home () {
 					<h2>Sélectionner votre poison :</h2>
 					<div className="HomeButton">
 						<div className="cocktailButton">
-														
 							<button className="cocktailButt" type="button" onClick={event=>history.push("/CocktailFilters")}>
-s")}>
 							<figure>
 								<img
 								className="imageCocktail"
