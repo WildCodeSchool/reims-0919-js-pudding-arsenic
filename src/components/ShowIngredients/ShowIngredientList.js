@@ -23,8 +23,9 @@ class ShowIngredientList extends React.Component {
 			product.image_front_url!==image_front_url)
 			this.setState({products:newCards})
   	}
-	getIngredient () {		
-		for (let i = 0 ; i < 7 ; i++) {
+	getIngredient () {
+		let ingredientNumber = this.randomIngredientNumber()		
+		for (let i = 0 ; i < ingredientNumber ; i++) {
 			const randomNumber = Math.floor(Math.random() * 20)
 			const randomPage = Math.floor(Math.random() * 1001)
 			const url =	`https://world.openfoodfacts.org/cgi/search.pl?page=${randomPage}&page_size=20&action=process&tagtype_0=categories&tag_contains_0=contains&tag_0=beverages&sort_by=unique_scans_n&page=1&page_size=20&axis_x=energy&axis_y=products_n&action=display&json=1`
