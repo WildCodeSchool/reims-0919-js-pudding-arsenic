@@ -20,7 +20,6 @@ class ShowPateList extends React.Component {
 	}
 	
 	deleteCard(image_front_url) {
-		console.log(image_front_url)
 		const newCards=this.state.products.filter(product=>
 			product.image_front_url!==image_front_url)
 			this.setState({products:newCards})
