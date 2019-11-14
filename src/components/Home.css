@@ -208,7 +208,7 @@
 		display:none;
 	}
 	.cocktailButton {
-		background-image:url(https://zupimages.net/up/19/45/lgn4.jpg);
+		background-image:url(https://zupimages.net/up/19/46/yv37.jpg);
 		width:45%;
 		height:400px;
 		font-family: 'Bigshot One', cursive;
@@ -221,10 +221,11 @@
 	.twoButton:hover,.pizzaButton:hover,.cocktailButton:hover {
 		opacity : 0.7;
 		cursor: pointer;
+		transition:0.5s;
 		-webkit-transform:scale(1.25)}
 
 	.pizzaButton{
-		background-image: url(https://zupimages.net/up/19/45/rsfq.jpg);
+		background-image: url(https://zupimages.net/up/19/46/eipz.jpg);
 		width:45%;
 
 		font-family: 'Bigshot One', cursive;
@@ -246,7 +247,6 @@
 	.twoButton{
 		background-image: url(https://zupimages.net/up/19/45/vbab.jpg);
 		width:30%;
-
 		font-family: 'Bigshot One', cursive;
 		font-size:1.4em;
 		color:	rgba(185, 139, 68, 0.822);
@@ -287,7 +287,7 @@
 		margin-bottom:2%;
 		color:black;
 		font-family: 'Bigshot One', cursive;
-		font-size:2.5em;
+		font-size:4em;
 		}
 
 	.Images{
@@ -318,10 +318,10 @@
 	}	
 	.label{
 		font-family: 'Bigshot One', cursive;
-		font-size:1.6em;
-		color:black;
+		font-size:4em;
+		color:white;
+		padding-bottom:5%;
+		padding-left:35%
 	}	
-	.imageCocktail{
-		width:500px;
-	}
+
 }

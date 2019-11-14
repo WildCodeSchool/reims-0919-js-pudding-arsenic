@@ -31,7 +31,7 @@ function Home () {
 							<figure>
 								<img
 								className="imageCocktail"
-								src="https://zupimages.net/up/19/45/d2zu.jpg"
+								src="https://zupimages.net/up/19/46/yv37.jpg"
 								alt="cocktail"
 								></img>
 							</figure>
@@ -43,7 +43,7 @@ function Home () {
 								<figure>
 									<img
 									className="imagePizza"
-									src="https://zupimages.net/up/19/45/uvpl.jpg"
+									src="https://zupimages.net/up/19/46/eipz.jpg"
 									alt="pizza"
 									></img>
 								</figure>
