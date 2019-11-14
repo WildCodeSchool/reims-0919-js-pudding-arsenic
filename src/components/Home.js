@@ -13,16 +13,7 @@ function Home () {
 					<img className="séparateur" src="https://zupimages.net/up/19/44/l8sr.png" alt="séparateur"></img>
 					<ImageBand />
 				</div>
-				<div className="HomeText">
-					<p>
-					Vous aimez prendre des risques ? Vous aimez les jeux potentiellement mortels ? 
-					Il y a une probabilité d'empoisonnement, c'est votre choix...</p> 
-					<p>Que ce soit parce que vous êtes joueur ou pour que vos invités ne reviennent pas,...
-					 nous vous proposons un panel de recettes de cocktail et pizza qui,
-					  à défaut de ravir vos papilles, vous offrirons de réelles sensations !!!</p>
-					<p>On vous attend sur les prochaines pages, on verra qui sera le plus fort ah ... ah ... ah ...
-					</p>
-				</div>
+				
 				<div className="affichageBouton">
 					<h2>Sélectionner votre poison :</h2>
 					<div className="HomeButton">
@@ -51,6 +42,17 @@ function Home () {
 							<div className="label">Pizza</div>
 						</div>
 					</div>
+					<h3>Cliquer sur l'image pour composer votre recette</h3>
+				</div>
+				<div className="HomeText">
+					<p>
+					Vous aimez prendre des risques ? Vous aimez les jeux potentiellement mortels ? 
+					Il y a une probabilité d'empoisonnement, c'est votre choix...</p> 
+					<p>Que ce soit parce que vous êtes joueur ou pour que vos invités ne reviennent pas,...
+					 nous vous proposons un panel de recettes de cocktail et pizza qui,
+					  à défaut de ravir vos papilles, vous offrirons de réelles sensations !!!</p>
+					<p>On vous attend sur les prochaines pages, on verra qui sera le plus fort ah ... ah ... ah ...
+					</p>
 				</div>
 			</div>
 		)	
