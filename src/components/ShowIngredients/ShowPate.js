@@ -26,30 +26,34 @@ toggleModal() {
 
 render(){
 	return (
-		<div className="ingredientCard">
-				<button 
-					type="button" 
-					className="close" 
-					style={{height:'30px', width:'30px'}}
-					onClick={this.onDeleteClick}>
-                    <span>&times;</span>
-                </button>
+		<div className="ingredientCard">				
 			<img
 				className="productImage"
 				src={this.props.image_front_url}
 				alt={this.props.generic_name_fr}
 			/>
-				<div className="productInfos">
-					<p className="productName">{this.props.generic_name_fr}</p>
-					<p className="productOrigin">{this.props.manufacturing_places}</p>
-					<button type="button" className="openModal" style={{height:'30px', width:'100px'}} onClick={this.toggleModal}>
-                    Plus d'infos ...
-          </button>
-				</div>
+			<div className="productInfos">
+				<p className="productName">{this.props.generic_name_fr}</p>
+				<p className="productOrigin">{this.props.manufacturing_places}</p>
+				<button type="button" className="openModal" onClick={this.toggleModal}>
+				Plus d'infos ...
+				</button>
+			</div>
+			<button 
+				type="button" 
+				className="close" 
+				style={{height:'30px', width:'30px'}}
+				onClick={this.onDeleteClick}>
+				<span>&times;</span>
+			</button>
 
 				<Modal
 					revele={this.state.revele}
 					cache={this.toggleModal}
+					image={this.props.image_front_url}
+					nom={this.props.generic_name_fr}
+					code={this.props.code_ID}
+					ingredients_text={this.props.ingredients_text}
 				/>	
 
 		</div>
