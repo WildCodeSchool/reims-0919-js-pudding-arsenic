@@ -209,14 +209,14 @@
 	}
 	.cocktailButton {
 		background-image:url(https://zupimages.net/up/19/45/lgn4.jpg);
-		width:30%;
-		height:300px;
+		width:45%;
+		height:400px;
 		font-family: 'Bigshot One', cursive;
 		font-size:1.4em;
 		color:	rgba(185, 139, 68, 0.822);
 		box-shadow:2px 2px 8px #aaa;
 		font:bold 13px Arial;
-		border-radius:50%;
+		border-radius:5%;
 	}
 	.twoButton:hover,.pizzaButton:hover,.cocktailButton:hover {
 		opacity : 0.7;
@@ -225,14 +225,14 @@
 
 	.pizzaButton{
 		background-image: url(https://zupimages.net/up/19/45/rsfq.jpg);
-		width:30%;
+		width:45%;
 
 		font-family: 'Bigshot One', cursive;
 		font-size:1.4em;
 		color:	rgba(185, 139, 68, 0.822);
 		box-shadow:2px 2px 8px #aaa;
 		font:bold 13px Arial;
-		border-radius:50%;
+		border-radius:5%;
 	}
 	.cocktailButt, .pizzaButt, .buttonT{
 		background: rgba(255,255,255,0);
@@ -240,7 +240,7 @@
 		font-size:25px;
 		font-family: 'Bigshot One', cursive;
 		color:rgba(255,255,255,0);
-		height:280px;
+		height:150px;
 		
 	}
 	.twoButton{
@@ -256,15 +256,15 @@
 	}
 
 	.HomeButton{
-		width:50%;
+		width:90%;
 		display:flex;
 		justify-content:space-between;
-		margin-right:25%;
-		margin-left:25%;
+		margin-right:5%;
+		margin-left:5%;
 	}
 	.Home {
 		width: 100%;
-		height: 595px;
+		height: 495px;
 		background-image:url(https://zupimages.net/up/19/44/1czf.jpg);
 		background-size:cover;
 		background-repeat:no-repeat;
@@ -274,8 +274,8 @@
 		width: 90%;
 		margin-right: 5%;
 		margin-left: 5%;
-		margin-bottom: 3%;
-		margin-top: 3%;
+		margin-bottom: 2%;
+		margin-top: 2%;
 		text-align: justify;
 		font-family: 'Bigshot One', cursive;
 		font-size:1.6em;
@@ -283,20 +283,22 @@
 	}
 	.Home h2 {
 		text-align: center;
-		margin-top:3%;
-		margin-bottom:3%;
+		margin-top:1%;
+		margin-bottom:2%;
 		color:black;
 		font-family: 'Bigshot One', cursive;
-		font-size:1.9em;
+		font-size:2.5em;
 		}
 
 	.Images{
 		display:flex;
 		align-content:stretch;
+		width:1000px;
 	}
 	.Image{
-		height:210px;
+		height:143px;
 	}
+
 	.revolver {
 		width: 12%;
 	}
@@ -307,7 +309,7 @@
 		background-image:url(https://zupimages.net/up/19/45/g454.jpg);
 		background-repeat:repeat;
 		width:100%;
-		height:500px;
+		height:600px;
 	}
 	.cocktailButton, .pizzaButton, .twoButton{
 		display:flex;
@@ -319,4 +321,7 @@
 		font-size:1.6em;
 		color:black;
 	}	
+	.imageCocktail{
+		width:500px;
+	}
 }

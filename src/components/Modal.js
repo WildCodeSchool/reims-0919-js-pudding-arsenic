@@ -4,6 +4,7 @@ import ShowIngredients from './ShowIngredients/ShowIngredients'
 
 
 
+
 const Modal= ({revele, cache, code, ingredients_text, nom}) => revele ?(
     <React.Fragment>
         <div className="overlay">
