@@ -73,7 +73,10 @@
 		align-self: center;
 		padding: 0.5em;
 	}
-	.productName, .productOrigin {
+	.productName{
 		max-width: 100%;
+	}
+	.productOrigin {
+		display:none;
 	}
 }

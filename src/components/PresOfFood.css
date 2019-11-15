@@ -10,7 +10,7 @@
     text-align: center;
     margin-top:1%;
     margin-bottom:1%;
-    color:white;
+    color:rgb(224, 205, 30);
     font-family: 'Bigshot One', cursive;
     font-size:3em;
     }
@@ -48,11 +48,24 @@
     display:flex;
     
 }
+.titleShow{
+ color: rgb(224, 205, 30);
+}
 
 
 @media only screen and (max-width: 415px) {
     .PresOfFood h2 {
         font-size: 1.7em;
         padding: 0.5em;
-    }	
+    }
+    .titleShow{
+        color: rgb(224, 205, 30);
+       }	
+    .align p{
+        font-size:1em;
+    }
+    .orga{
+        width:90%;
+        margin-left:5%;
+    }
 }

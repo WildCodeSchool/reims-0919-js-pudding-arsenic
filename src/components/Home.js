@@ -2,7 +2,7 @@ import React from 'react';
 import Title from './Title';
 import './Home.css';
 import {useHistory} from 'react-router-dom';
-import ImageBand from './ImageBand';
+//import ImageBand from './ImageBand';
 
 function Home () {
 	let history=useHistory()
@@ -10,9 +10,8 @@ function Home () {
 			<div className="Home">
 				<div>
 					<Title />
-					<ImageBand />
 					<img className="séparateur" src="https://zupimages.net/up/19/44/l8sr.png" alt="séparateur"></img>
-					
+					{/* <ImageBand /> */}
 				</div>
 				
 				<div className="affichageBouton">
@@ -26,19 +25,19 @@ function Home () {
 								src="https://zupimages.net/up/19/46/yv37.jpg"
 								alt="cocktail"
 								></img>
-							</figure>
+							</figure> 
 							Get a cocktail</button>
 							<div className="label">Cocktail</div>
 						</div>
 						<div className="pizzaButton">
 							<button className="pizzaButt" type="button" onClick={event=>history.push("/Showpizza")}>Get a pizza
-								<figure>
-									<img
+								{<figure>
+									 <img
 									className="imagePizza"
-									src="https://zupimages.net/up/19/46/eipz.jpg"
+									src="https://www.restaurant-diroma.com/apps/uploads/2018/10/pizza01-300x200.jpg"
 									alt="pizza"
-									></img>
-								</figure>
+									></img> 
+								</figure>}
 							</button>
 							<div className="label">Pizza</div>
 						</div>

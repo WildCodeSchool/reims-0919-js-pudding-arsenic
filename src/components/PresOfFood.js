@@ -17,8 +17,8 @@ function PresOfFood (){
     return(
         <div className="PresOfFood">
             <Title />
-			<ImageBand />
-            <h2>Votre recette de la mort :</h2>
+			{/* <ImageBand /> */}
+            <h2 className="titleShow">Votre COCKTAIL de la mort :</h2>
             <div className="orga">
                 <div className="align">
                     <p>Tu as changé d'avis, pour retourner sur l'accueil, clique sur la flèche : </p>
@@ -37,7 +37,7 @@ function PresOfFood (){
                     </button>
                 </div>
             </div>
-            <ShowIngredientList />
+			<ShowIngredientList />
             <div className="orga">
                 <div className="align">
                     <p>Tu as changé d'avis, pour retourner sur l'accueil, clique sur la flèche : </p>
