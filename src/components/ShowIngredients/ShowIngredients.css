@@ -39,6 +39,11 @@
 }
 .productName {
 	font-weight: bold;
+	font-size: 1.5em;
+}
+.productOrigin {
+	font-weight: lighter;
+	font-size: 1.2em;
 }
 .openModal {
 	height:'30px'; 
