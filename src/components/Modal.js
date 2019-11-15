@@ -1,6 +1,5 @@
 import React from "react";
 import "./Modal.css";
-import ShowIngredients from "./ShowIngredients/ShowIngredients";
 
 const Modal = ({ revele, cache, code, ingredients_text, nom }) =>
   revele ? (
