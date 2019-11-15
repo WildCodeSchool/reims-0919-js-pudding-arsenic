@@ -23,7 +23,7 @@ function PresOfFood (){
             <div className="orga">
                 <div className="align">
                     <p>Tu as changé d'avis, ok'', pour retourner sur la page de filtre, clique sur la flèche : </p>
-                    <button className="buttonBack" type="button" onClick={event=>history.push("/CocktailFilters")}>
+                    <button className="buttonBack" type="button" onClick={event=>history.push("/")}>
                         <figure>
                             <img className="goBack" src="https://zupimages.net/up/19/46/hprl.jpg" alt="Flèche"></img>
                         </figure>
