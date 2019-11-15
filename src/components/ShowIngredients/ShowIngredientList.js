@@ -40,7 +40,7 @@ class ShowIngredientList extends React.Component {
 								image_front_url: data.products[randomNumber].image_front_url,
 								generic_name_fr: data.products[randomNumber].product_name_fr,
 								manufacturing_places: data.products[randomNumber].manufacturing_places,
-								code_ID: data.products[randomNumber].code,
+								code: data.products[randomNumber].code,
 								ingredients_text: data.products[randomNumber].ingredients_text,
 							}
 						let products = state.products.concat(ingredient)
@@ -62,7 +62,7 @@ class ShowIngredientList extends React.Component {
 						image_front_url={this.state.products[i].image_front_url}
 						generic_name_fr={this.state.products[i].generic_name_fr}
 						manufacturing_places={this.state.products[i].manufacturing_places}
-						code_ID={this.state.products[i].code}
+						code={this.state.products[i].code}
 						ingredients_text={this.state.products[i].ingredients_text}
             			deleteClickHandler = {this.deleteCard.bind(this,product.image_front_url)}
 						/>						
