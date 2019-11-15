@@ -24,7 +24,7 @@ class ShowIngredientList extends React.Component {
 			this.setState({products:newCards})
   	}
 	getIngredient () {
-		let ingredientNumber = this.randomIngredientNumber()		
+		let ingredientNumber = this.state.numberOfIngredients		
 		for (let i = 0 ; i < ingredientNumber ; i++) {
 			const randomNumber = Math.floor(Math.random() * 20)
 			const randomPage = Math.floor(Math.random() * 1001)
