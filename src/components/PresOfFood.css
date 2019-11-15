@@ -61,4 +61,11 @@
     .titleShow{
         color: rgb(224, 205, 30);
        }	
+    .align p{
+        font-size:1em;
+    }
+    .orga{
+        width:90%;
+        margin-left:5%;
+    }
 }

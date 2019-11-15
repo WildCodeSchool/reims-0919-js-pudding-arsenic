@@ -61,6 +61,7 @@ color:white;
 			black
 		);
 		border-radius:820px 0 0 0;
+		box-shadow:22px 22px 28px rgb(65, 62, 62);
 	}
 	.titleShow{
 		color: rgb(224, 205, 30);

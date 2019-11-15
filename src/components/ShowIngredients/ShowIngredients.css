@@ -79,7 +79,8 @@
 		padding: 0;
 		width: 90%;
 		min-height: 35vh;
-		max-height: auto;	
+		max-height: auto;
+		font-size:15px;	
 	}
 	.productImage {
 		max-width: 40%;
@@ -87,7 +88,10 @@
 		align-self: center;
 		padding: 0.5em;
 	}
-	.productName, .productOrigin {
+	.productName{
 		max-width: 100%;
+	}
+	.productOrigin {
+		display:none;
 	}
 }

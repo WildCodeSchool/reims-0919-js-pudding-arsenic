@@ -19,25 +19,25 @@ function Home () {
 					<div className="HomeButton">
 						<div className="cocktailButton">
 							<button className="cocktailButt" type="button" onClick={event=>history.push("/ShowIngredients")}>
-							{/* <figure>
+							<figure>
 								<img
 								className="imageCocktail"
 								src="https://zupimages.net/up/19/46/yv37.jpg"
 								alt="cocktail"
 								></img>
-							</figure> */}
+							</figure> 
 							Get a cocktail</button>
 							<div className="label">Cocktail</div>
 						</div>
 						<div className="pizzaButton">
 							<button className="pizzaButt" type="button" onClick={event=>history.push("/Showpizza")}>Get a pizza
-								{/*<figure>
+								{<figure>
 									 <img
 									className="imagePizza"
 									src="https://www.restaurant-diroma.com/apps/uploads/2018/10/pizza01-300x200.jpg"
 									alt="pizza"
 									></img> 
-								</figure>*/}
+								</figure>}
 							</button>
 							<div className="label">Pizza</div>
 						</div>
