@@ -1,7 +1,7 @@
 import React from "react"
 import "./ShowIngredients/ShowIngredients.css"
 import Title from './Title'
-import ImageBand from './ImageBand'
+//import ImageBand from './ImageBand'
 import ShowPateList from "./ShowIngredients/ShowPateList"
 import ShowCheeseList from "./ShowIngredients/ShowCheeseList"
 import ShowIngredientListPizza from "./ShowIngredients/ShowIngredientListPizza"
@@ -19,7 +19,7 @@ function PresOfFood (){
     return(
         <div className="PresOfFood">
             <Title />
-			<ImageBand />
+			{/* <ImageBand /> */}
             <h2>Votre recette de la mort :</h2>
             <ShowPateList />
             <ShowCheeseList />
