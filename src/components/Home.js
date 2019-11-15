@@ -11,7 +11,7 @@ function Home () {
 				<div>
 					<Title />
 					<img className="séparateur" src="https://zupimages.net/up/19/44/l8sr.png" alt="séparateur"></img>
-					<ImageBand />
+					
 				</div>
 				
 				<div className="affichageBouton">
