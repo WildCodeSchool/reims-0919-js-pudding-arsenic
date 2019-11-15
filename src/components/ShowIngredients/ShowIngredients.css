@@ -55,7 +55,6 @@
 	border-color: rgba(185, 139, 68, 0.822);
 	padding: 0.5em;
 	transition: background-color 0.2s;
-
 }
 .openModal:hover {
 	background-color: rgba(185, 139, 68, 0.822);
