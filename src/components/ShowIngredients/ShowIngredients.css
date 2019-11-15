@@ -54,7 +54,12 @@
 	border-width: 1px;
 	border-color: rgba(185, 139, 68, 0.822);
 	padding: 0.5em;
+	transition: background-color 0.2s;
 
+}
+.openModal:hover {
+	background-color: rgba(185, 139, 68, 0.822);
+	cursor: pointer;
 }
 .close {
 	align-self: flex-start;
@@ -62,6 +67,11 @@
 	border: none;
 	font-size: 3em;
 	color: rgb(197, 197, 197);
+	transition: color 0.2s;
+}
+.close:hover {
+	color: rgba(185, 139, 68, 0.822);
+	cursor: pointer;
 }
 
 @media only screen and (max-width: 415px) {
