@@ -18,7 +18,7 @@ function PresOfFood (){
         <div className="PresOfFood">
             <Title />
 			{/* <ImageBand /> */}
-            <h2>Votre recette de la mort :</h2>
+            <h2 className="titleShow">Votre COCKTAIL de la mort :</h2>
             <ShowIngredientList />
             <div className="orga">
                 <div className="align">
