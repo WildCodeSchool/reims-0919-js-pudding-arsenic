@@ -14,7 +14,7 @@ function PresOfFilterForCocktail (){
     return(
         <div className="PresOfFood">
             <Title />
-			<ImageBand />
+			{/* <ImageBand /> */}
             <AlcoholFilter />
             <div className="fourchette">
                 <button className="ack" type="button" onClick={event=>history.push("/")}>
