@@ -10,6 +10,7 @@ function Home () {
 			<div className="Home">
 				<div>
 					<Title />
+					<ImageBand />
 					<img className="séparateur" src="https://zupimages.net/up/19/44/l8sr.png" alt="séparateur"></img>
 					
 				</div>

@@ -19,8 +19,26 @@ function PresOfFood (){
     return(
         <div className="PresOfFood">
             <Title />
-			<ImageBand />
             <h2>Votre recette de la mort :</h2>
+			<div className="orga">
+                <div className="align">
+                    <p>Tu as changé d'avis, pour retourner sur l'accueil, clique sur la flèche : </p>
+                    <button className="buttonBack" type="button" onClick={event=>history.push("/")}>
+                        <figure>
+                            <img className="goBack" src="https://zupimages.net/up/19/46/hprl.jpg" alt="Flèche"></img>
+                        </figure>
+                    </button>
+                </div>
+                <div className="align">
+                    <p>Ca ne te plait pas ! Tu veux relancer la roulette !  clique sur le bouton : </p>
+                    <button className="buttonRefresh" type="button" onClick={refreshpage}>
+                        <figure>
+                            <img className="goRefresh" src="https://zupimages.net/up/19/46/swth.jpg" alt="Retour"></img>
+                        </figure>
+                    </button>
+                </div>
+            </div>
+            
             <ShowPateList />
             <ShowCheeseList />
             <ShowIngredientListPizza />
@@ -34,7 +52,7 @@ function PresOfFood (){
                     </button>
                 </div>
                 <div className="align">
-                    <p>Ca ne te plait pas ! Tu veux relancer la roulette, clique sur le bouton : </p>
+                    <p>Ca ne te plait pas ! Tu veux relancer la roulette !  clique sur le bouton : </p>
                     <button className="buttonRefresh" type="button" onClick={refreshpage}>
                         <figure>
                             <img className="goRefresh" src="https://zupimages.net/up/19/46/swth.jpg" alt="Retour"></img>
